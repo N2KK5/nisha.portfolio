@@ -1,0 +1,379 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://unpkg.com/@tailwindcss/browser@4"></script>
+    <link rel="stylesheet" href="/node_modules/bootstrap-icons/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+    <style>
+        body{
+            background-color: black;
+        }
+    </style>
+</head>
+<body>
+
+        <!--Nav Bar-->
+        <header class="header">
+            <nav class="nav flex gap-4 w-full bg-blue-300 text-black items-center font-bold px-10 py-4 mx-auto">
+               <div class="flex gap-4 mx-auto text-xl font-bold">
+                  <ul class="nav-link flex gap-4">
+                      <li class="hover:animate__animated animate__bounce">
+                          <a href="#home" class="hover:border-b-2 border-blue-600 p-2">
+                             Home
+                          </a>
+                      </li>
+                      <li class="animate__animated animate__bounce animate__delay-2s">
+                          <a href="#about" class="hover:border-b-2 border-blue-600 p-2 animate__animated animate__bounce">
+                             About
+                          </a>
+                      </li>
+                      <li class="animate__animated animate__bounce animate__delay-3s">
+                          <a href="#skills" class="hover:border-b-2 border-blue-600 p-2 animate__animated animate__bounce">
+                             Skills
+                          </a>
+                      </li>
+                      <li class="animate__animated animate__bounce animate__delay-4s">
+                         <a href="#certifi" class="hover:border-b-2 border-blue-600 p-2 animate__animated animate__bounce">
+                            Certificates
+                         </a>
+                      </li>
+                      <li class="animate__animated animate__bounce animate__delay-5s">
+                         <a href="#contact" class="hover:border-b-2 border-blue-600 p-2 animate__animated animate__bounce">
+                            Contact
+                         </a>
+                      </li>
+                  </ul>
+              </div>
+            </nav>
+       </header>
+
+
+
+
+        <!--Home-->
+
+
+       <div id="home">
+           <section>
+              <div class="grid grid-cols-2 gap-4 mx-auto">
+                  <div class="my-30 px-28 rounded-full">
+                    <img src="../assets/img6.jpg" alt="img" height="500" width="500">
+                  </div>
+                  <div class="py-70">
+                    <p class="text-white font-bold text-6xl">Hello, I'm Nisha V</p>
+                    <br>
+
+                    <a href="D:\My_Porfolio\assets\Nisha.docx">
+                    <button class="bg-blue-400 text-black font-bold py-2 px-4 rounded hover:bg-blue-500 hover:text-black">
+                        Resume
+                    </button>
+                    </a>
+                  </div>
+              </div>
+           </section>
+       </div>
+
+
+
+
+        <!--About-->
+
+        <div id="about">
+            <section class="bg-blue-400 text-center border-box border-35 border-black flex flex-col justify-center items-center gap-2">
+                <div class="text-center py-3 flex flex-col justify-center items-center gap-2">
+                    <p class="text-3xl text-black tracking-wider font-bold">
+                        ABOUT ME
+                    </p>
+                    <hr class="border-1 border-black w-16">
+                    <div>
+                        <p class="text-black font-bold text-xl tracking-wider rounded px-7 pb-2 m-15">
+                            "Hello, I'm NISHA.
+                            I'm excited to start my professional journey and apply my skills and
+                            knowledge in a dynamic environment. I'm a enthusiastic person looking to
+                            learn and grow, team player, and passionate about innovation and growth.
+                            I'm eager to take on new challenges and make a positive impact❤️."
+                        </p>
+                        <p class="bg-black text-white font-bold text-xl tracking-wider rounded-full px-7 pb-2 m-15">
+                            <i class="bi bi-people text-blue-400"></i> Education<br>
+                            Bsc Computer Science<br>
+                            SSKV college of arts and science for women
+                        </p>
+                    </div>
+
+
+                    <div class="text-center py-4 grid grid-cols-3 justify-center items-center gap-2 m-4">
+                        <div class="p-2 m-5 px-10">
+                            <p class="text-black font-bold text-xl px-10"><i class="bi bi-arrow-right-circle-fill text-indigo-950"></i>
+                                Certificate Design</p>
+                            <br>
+                            <p class="border-box border-2 border-white bg-black text-white py-4 text-black font-bold rounded-full">
+                                Participated in a certificate design competition, exploring my creativity and design skills.
+                            </p>
+                        </div>
+
+
+                        <div class="p-2 m-5 px-10">
+                            <p class="text-black font-bold text-xl px-10"><i class="bi bi-arrow-right-circle-fill text-indigo-950"></i>
+                                PPT Presentation-Algorithm
+                            </p>
+                            <br>
+                            <p class="border-box border-2 border-white bg-black text-white rounded-full py-4 text-black font-bold">
+                                Effectively communicated my ideas to the audience.
+                            </p>
+                        </div>
+
+
+                        <div class="p-2 m-5 px-10 mb-10">
+                            <p class="text-black font-bold text-xl px-10"><i class="bi bi-arrow-right-circle-fill text-indigo-950"></i>
+                                Debugging in Python
+                            </p>
+                            <br>
+                            <p class="border-box border-2 border-white bg-black text-white rounded-full py-4 text-black font-bold">
+                               Experience in identifying and resolving syntax errors, logical errors, and runtime errors in Python code.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+
+
+
+
+   <!--Skills-->
+
+        <div id="skills">
+           <section class="bg-blue-400 text-center border-box border-35 border-black flex flex-col justify-center items-center gap-2 my-10">
+               <div class="text-center py-3 flex flex-col justify-center items-center gap-2">
+                   <p class="text-3xl text-black tracking-wider font-bold">
+                       SKILLS
+                   </p>
+                   <hr class="border-1 border-black w-16">
+                   <p class="font-bold text-black text-center text-xl py-3">Programming Languages</p>
+                   <div class="grid grid-cols-3 gap-4 px-3 py-4">
+                       <div class="box-border border-5 border-black text-center tracking-widest bg-black h-50 p-10 my-2">
+                           <div class="flex flex-col justify-center items-center text-6xl">
+                               <img src="../assets/python.jpg" alt="img" width="50" height="50">
+                           </div>
+
+                           <p class="text-justify font-bold px-14 text-xl">
+                           <p class="px-5 font-bold text-xl text-white">
+                               Python
+                           </p>
+                           </p>
+                       </div>
+                       <div class="box-border border-5 border-white-300 text-center tracking-widest bg-black h-50 p-10 my-2">
+                           <div class="flex flex-col justify-center items-center text-6xl">
+                               <img src="../assets/java.png" alt="img" width="75" height="75">
+                           </div>
+
+                           <p class="font-bold text-justify px-14 text-xl">
+                           <p class="px-5 font-bold text-xl text-white">
+                               Java
+                           </p>
+                           </p>
+                       </div>
+
+                       <div class="box-border border-5 border-white-300 text-center tracking-widest bg-black h-50 p-10 my-2">
+                           <div class="flex flex-col justify-center items-center text-6xl">
+                               <img src="../assets/javascript.jpg" alt="img" width="50" height="50">
+                           </div>
+
+                           <p class="font-bold text-justify px-9 text-xl">
+                           <p class="px-5 font-bold text-xl text-white">
+                               Javascript
+                           </p>
+                           </p>
+                       </div>
+                   </div>
+
+
+
+
+                   <p class="font-bold text-black text-center text-xl py-3">Database</p>
+
+                   <div class="grid grid-cols-2 gap-4 px-3 py-4">
+                       <div class="box-border border-5 border-white-300 text-center tracking-widest bg-black h-50 p-10 my-2">
+                           <div class="flex flex-col justify-center items-center text-6xl">
+                               <img src="../assets/mysql2.jpg" alt="img" width="100" height="100">
+                           </div>
+
+                           <p class="text-justify font-bold px-26 text-xl text-white">
+                               MySQL
+                           </p>
+                       </div>
+
+                       <div class="box-border border-5 border-white-300 text-center tracking-widest bg-black h-50 p-10 my-2 py-10">
+                           <div class="flex flex-col justify-center items-center text-6xl my-4">
+                               <img src="../assets/mongodb1.png" alt="img" width="20" height="10">
+                           </div>
+
+                           <p class="font-bold text-justify px-22 text-xl text-white">
+                               MongoDB
+                           </p>
+                       </div>
+                   </div>
+
+               </div>
+           </section>
+        </div>
+
+
+
+       <!--Workshop-->
+
+
+        <div id="workshop">
+           <div class="box-border border-35 border-black text-center tracking-widest bg-black h-50 my-10 my-2">
+             <div class="text-center flex flex-col justify-center items-center gap-2 bg-blue-400 py-3">
+                <p class="text-3xl tracking-wider font-bold text-center">
+                    WORKSHOP
+                </p>
+                 <hr class="border-1 border-black w-16">
+                <section class="border-box border-2 bg-black text-white rounded px-5 py-2 my-5">
+                    <div>
+                        <p class="text-center font-bold tracking-widest text-l">
+                            Role of Rust Language in Blockchain Development at
+                            SRM institute of science and technology, Vadapalani
+                        </p>
+                    </div>
+                </section>
+             </div>
+           </div>
+        </div>
+
+
+
+
+
+        <!--certifications-->
+
+
+        <div id="certifi">
+            <section class="bg-blue-400 text-black my-10 box-border border-35 border-black text-center tracking-widest">
+                <div class="text-center py-4 flex flex-col justify-center items-center gap-2">
+                    <p class="text-3xl tracking-wider font-bold text-center">
+                        CERTIFICATES
+                    </p>
+                    <hr class="border-1 border-black w-16 text-center">
+                </div>
+
+
+                <div class="grid grid-cols-4 gap-4 px-3 py-4">
+                    <div class="box-border border-3 border-white text-center bg-black text-white p-10 my-2">
+                        <div class="flex flex-col justify-center items-center font-bold text-2xl my-4">
+                            Machine Learning with Python in Great Learning
+                        </div>
+
+
+                        <a href="D:\My_Porfolio\assets\great learning.jpg">
+                        <button class="bg-blue-400 text-black font-bold py-2 px-4 rounded hover:bg-blue-600 hover:text-white">
+                            View
+                        </button>
+                        </a>
+                    </div>
+
+                    <div class="box-border border-3 border-white text-center bg-black text-white p-10 my-2">
+                        <div class="flex flex-col justify-center items-center font-bold text-2xl my-4">
+                            Introduction to Machine Learning in NPTEL [MHRD]
+                        </div>
+
+
+                        <a href="D:\My_Porfolio\assets\nptel.jpg">
+                        <button class="bg-blue-400 text-black font-bold py-2 px-4 rounded hover:bg-blue-600 hover:text-white">
+                            View
+                        </button>
+                        </a>
+                    </div>
+
+
+
+                    <div class="box-border border-3 border-white text-center bg-black text-white p-10 my-2">
+                        <div class="flex flex-col justify-center items-center font-bold text-2xl my-8">
+                            Design Thinking in Infosys Springboard
+                        </div>
+
+
+                        <a href="D:\My_Porfolio\assets\Infosys design thinking .jpg">
+                        <button class="bg-blue-400 text-black font-bold py-2 px-4 rounded hover:bg-blue-600 hover:text-white">
+                            View
+                        </button>
+                        </a>
+                    </div>
+
+
+
+
+                    <div class="box-border border-3 border-white text-center bg-black text-white p-10 my-2">
+                        <div class="flex flex-col justify-center items-center font-bold text-2xl my-8">
+                            Python for Data Science in Infosys
+                        </div>
+
+                        <a href="D:\My_Porfolio\assets\Infosys python for data science .jpg">
+                        <button class="bg-blue-400 text-black font-bold py-2 px-4 rounded hover:bg-blue-600 hover:text-white">
+                            View
+                        </button>
+                        </a>
+                    </div>
+                </div>
+            </section>
+        </div>
+
+
+
+
+
+        <!--contact-->
+
+
+        <div id="contact">
+            <section class="bg-blue-400 text-black border-box border-35 border-black text-center tracking-widest">
+                <div class="text-center py-5 flex flex-col justify-center items-center gap-2">
+                    <p class="text-3xl tracking-wider font-bold text-center">
+                        CONTACT
+                    </p>
+                    <hr class="border-1 border-black w-16 text-center">
+                </div>
+
+                <div class="px-50 py-5">
+                    <div class="grid grid-cols-2 gap-4 rounded-full text-center bg-black text-white p-4 my-2">
+                        <p>
+                            <a href="mailto:nishatharun57@gmail.com">
+                            <i class="bi bi-envelope"></i> nishatharun57@gmail.com
+                            </a>
+                        </p>
+                        <p>
+                            <i class="bi bi-telephone text-end"></i> +91 7540092577
+                        </p>
+
+                    </div>
+                </div>
+            </section>
+        </div>
+
+
+
+
+
+
+   <footer>
+     <section class="bg-black text-white">
+          <div class="text-center tracking-widest py-2">
+              <p class="pb-4">Copyright <i class="bi bi-c-circle"></i> 2025 Nisha V. All Rights Reserved.</p>
+          </div>
+     </section>
+  </footer>
+
+
+
+
+
+
+
+
+</body>
+</html>

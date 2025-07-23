@@ -31,7 +31,6 @@
         <ul class="hidden md:flex space-x-4 items-center text-xl animate__animated animate__fadeInDown">
             <li><a href="#home" class="hover:border-b-2 border-[#3A3A40] p-2">Home</a></li>
             <li><a href="#about" class="hover:border-b-2 border-[#3A3A40] p-2">About</a></li>
-            <li><a href="#education" class="hover:border-b-2 border-[#3A3A40] p-2">Education</a></li>
             <li><a href="#projects" class="hover:border-b-2 border-[#3A3A40] p-2">Projects</a></li>
             <li><a href="#internship" class="hover:border-b-2 border-[#3A3A40] p-2">Internship</a></li>
             <li><a href="#skills" class="hover:border-b-2 border-[#3A3A40] p-2">Skills</a></li>
@@ -45,7 +44,6 @@
     <ul class="grid px-4 md:hidden text-xl animate__animated animate__fadeInDown">
         <li><a href="#home" class="hover:border-b-2 border-[#3A3A40] p-2 block">Home</a></li>
         <li><a href="#about" class="hover:border-b-2 border-[#3A3A40] p-2 block">About</a></li>
-        <li><a href="#education" class="hover:border-b-2 border-[#3A3A40] p-2 block">Education</a></li>
         <li><a href="#projects" class="hover:border-b-2 border-[#3A3A40] p-2 block">Projects</a></li>
         <li><a href="#internship" class="hover:border-b-2 border-[#3A3A40] p-2 block">Internship</a></li>
         <li><a href="#skills" class="hover:border-b-2 border-[#3A3A40] p-2 block">Skills</a></li>
@@ -100,7 +98,7 @@
                             </p>
                         </div>
                         <div class="py-2">
-                            <div id="education">
+                            <div>
                                 <p class="text-2xl">
                                     <i class="bi bi-people"></i> EDUCATION<br>
                                 </p>
@@ -196,69 +194,105 @@
         <!--Skills-->
 
         <div id="skills" class="bg-[#B5B5B5] p-8 border-25 border-[#3A3A40] rounded">
-            <div class="text-center font-bold text-3xl pr-14 underline">
+            <div class="text-center font-bold text-3xl underline">
                 SKILLS
             </div>
 
-            <section>
-                <div class="grid grid-cols-1 md:grid-cols-1 lg:grid-cols-3 xl:grid-cols-5 mx-18 p-10 gap-10 my-4">
-                    <div class="grid grid-cols-1 gap-10">
+            <div class="grid md:grid-cols-1 lg:grid-cols-2 xl:grid-cols-5 gap-6 py-4">
+                <div class="box-border border-3 border-white text-center bg-[#3A3A40] text-[#B5B5B5] p-10 my-2">
+                    <div class="flex flex-col justify-center items-center font-bold text-2xl my-4">
                         <div>
-                            <img src="./html.png" alt="img" class="h-20 w-20 border-2 border-black p-4">
-                            <span class="text-xl pl-4"> HTML</span>
-                        </div>
-                        <div>
-                            <img src="./css.png" alt="img" class="h-20 w-20 border-2 border-black p-4">
-                            <span class="text-xl pl-6"> CSS</span>
+                            <img src="./html.png" alt="img" class="h-20 w-20 border-2 border-purple-300 p-4">
+                            <span class="text-xl"> HTML</span>
                         </div>
                     </div>
+                </div>
 
-                    <div class="grid grid-cols-1 gap-10">
+                <div class="box-border border-3 border-white text-center bg-[#3A3A40] text-[#B5B5B5] p-10 my-2">
+                    <div class="flex flex-col justify-center items-center font-bold text-2xl my-4">
                         <div>
-                            <img src="./physics.png" alt="img" class="h-20 w-20 border-2 border-black p-4">
-                            <span class="text-xl pl-4"> React</span>
+                            <img src="./css.png" alt="img" class="h-20 w-20 border-2 border-purple-300 p-4">
+                            <span class="text-xl"> CSS</span>
                         </div>
+                    </div>
+                </div>
+
+                <div class="box-border border-3 border-white text-center bg-[#3A3A40] text-[#B5B5B5] p-10 my-2">
+                    <div class="flex flex-col justify-center items-center font-bold text-2xl my-4">
                         <div>
-                            <img src="./java-script.png" alt="img" class="h-20 w-20 border-2 border-black p-4">
+                            <img src="./physics.png" alt="img" class="h-20 w-20 border-2 border-purple-300 p-4">
+                            <span class="text-xl"> React</span>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="box-border border-3 border-white text-center bg-[#3A3A40] text-[#B5B5B5] p-10 my-2">
+                    <div class="flex flex-col justify-center items-center font-bold text-2xl my-4">
+                        <div>
+                            <img src="./java-script.png" alt="img" class="h-20 w-20 border-2 border-purple-300 p-4">
                             <span class="text-xl"> Java Script</span>
                         </div>
                     </div>
+                </div>
 
-                    <div class="grid gap-10">
+                <div class="box-border border-3 border-white text-center bg-[#3A3A40] text-[#B5B5B5] p-10 my-2">
+                    <div class="flex flex-col justify-center items-center font-bold text-2xl my-4">
                         <div>
-                            <img src="./python.jpg" alt="img" class="h-20 w-20 border-2 border-black p-4">
-                            <span class="text-xl pl-2"> Python</span>
+                            <img src="./python.jpg" alt="img" class="h-20 w-20 border-2 border-purple-300 p-4">
+                            <span class="text-xl"> Python</span>
                         </div>
+                    </div>
+                </div>
+
+                <div class="box-border border-3 border-white text-center bg-[#3A3A40] text-[#B5B5B5] p-10 my-2">
+                    <div class="flex flex-col justify-center items-center font-bold text-2xl my-4">
                         <div>
-                            <img src="./bootstrap.png" alt="img" class="h-20 w-20 border-2 border-black p-4">
+                            <img src="./tailwindcss-mark.d52e9897.svg" alt="img" class="h-20 w-20 border-2 border-purple-300 p-4 pl-4">
+                            <span class="text-xl"> Tailwind</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="box-border border-3 border-white text-center bg-[#3A3A40] text-[#B5B5B5] p-10 my-2">
+                    <div class="flex flex-col justify-center items-center font-bold text-2xl my-4">
+                        <div>
+                            <img src="./bootstrap.png" alt="img" class="h-20 w-20 border-2 border-purple-300 p-4">
                             <span class="text-xl"> Bootstrap</span>
                         </div>
                     </div>
+                </div>
 
-                    <div class="grid gap-10">
+                <div class="box-border border-3 border-white text-center bg-[#3A3A40] text-[#B5B5B5] p-10 my-2">
+                    <div class="flex flex-col justify-center items-center font-bold text-2xl my-4">
                         <div>
-                            <img src="./tailwindcss-mark.d52e9897.svg" alt="img" class="h-20 w-20 border-2 border-black p-4 pl-4">
-                            <span class="text-xl"> Tailwind</span>
-                        </div>
-                        <div>
-                            <img src="./xd.png" alt="img" class="h-20 w-20 border-2 border-black p-4">
+                            <img src="./xd.png" alt="img" class="h-20 w-20 border-2 border-purple-300 p-4">
                             <span class="text-xl"> Adobe XD</span>
                         </div>
                     </div>
+                </div>
 
-                    <div class="grid grid-cols-1 gap-10">
+                <div class="box-border border-3 border-white text-center bg-[#3A3A40] text-[#B5B5B5] p-10 my-2">
+                    <div class="flex flex-col justify-center items-center font-bold text-2xl my-4">
                         <div>
-                            <img src="./figma.png" alt="img" class="h-20 w-20 border-2 border-black p-4">
-                            <span class="text-xl pl-4"> Figma</span>
+                            <img src="./figma.png" alt="img" class="h-20 w-20 border-2 border-purple-300 p-4">
+                            <span class="text-xl"> Figma</span>
                         </div>
+                    </div>
+                </div>
+
+
+                <div class="box-border border-3 border-white text-center bg-[#3A3A40] text-[#B5B5B5] p-10 my-2">
+                    <div class="flex flex-col justify-center items-center font-bold text-2xl my-4">
                         <div>
-                            <img src="./word.png" alt="img" class="h-20 w-20 border-2 border-black p-4">
+                            <img src="./word.png" alt="img" class="h-20 w-20 border-2 border-purple-300 p-4">
                             <span class="text-xl"> Ms Word</span>
                         </div>
                     </div>
                 </div>
-            </section>
+            </div>
         </div>
+
 
 
 

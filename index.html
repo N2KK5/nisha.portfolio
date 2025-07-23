@@ -12,62 +12,48 @@
 </head>
 <body>
 
+<section class="bg-[#3A3A40]">
 
-    <!--Nav Bar-->
-    <section class="bg-[#3A3A40]">
-        <header class="header">
-            <nav class="nav flex gap-4 w-full bg-[#B5B5B5] text-black items-center font-bold px-10 py-4 mx-auto">
-                <div class="flex gap-4 mx-auto text-xl font-bold">
-                    <ul class="nav-link flex gap-4">
-                        <li class="animate__animated animate__fadeInDown animate__delay-0.5s">
-                            <a href="#home" class="hover:border-b-2 border-[#3A3A40] p-2 animate__animated animate__bounce">
-                                Home
-                            </a>
-                        </li>
-                        <li class="animate__animated animate__fadeInDown animate__delay-0.6s">
-                            <a href="#about" class="hover:border-b-2 border-[#3A3A40] p-2 animate__animated animate__bounce">
-                                About
-                            </a>
-                        </li>
-                        <li class="animate__animated animate__fadeInDown animate__delay-0.7s">
-                            <a href="#education" class="hover:border-b-2 border-[#3A3A40] p-2 animate__animated animate__bounce">
-                                Education
-                            </a>
-                        </li>
-                        <li class="animate__animated animate__fadeInDown animate__delay-0.8s">
-                            <a href="#projects" class="hover:border-b-2 border-[#3A3A40] p-2 animate__animated animate__bounce">
-                                Projects
-                            </a>
-                        </li>
-                        <li class="animate__animated animate__fadeInDown animate__delay-0.8s">
-                            <a href="#internship" class="hover:border-b-2 border-[#3A3A40] p-2 animate__animated animate__bounce">
-                                Internship
-                            </a>
-                        </li>
-                        <li class="animate__animated animate__fadeInDown animate__delay-0.9s">
-                            <a href="#skills" class="hover:border-b-2 border-[#3A3A40] p-2 animate__animated animate__bounce">
-                                Skills
-                            </a>
-                        </li>
-                        <li class="animate__animated animate__fadeInDown animate__delay-1.0s">
-                            <a href="#certificates" class="hover:border-b-2 border-[#3A3A40] p-2 animate__animated animate__bounce">
-                                Certificates
-                            </a>
-                        </li>
-                        <li class="animate__animated animate__fadeInDown animate__delay-1.1s">
-                            <a href="#workshops" class="hover:border-b-2 border-[#3A3A40] p-2 animate__animated animate__bounce">
-                                Workshops
-                            </a>
-                        </li>
-                        <li class="animate__animated animate__fadeInDown animate__delay-1.2s">
-                            <a href="#contact" class="hover:border-b-2 border-[#3A3A40] p-2 animate__animated animate__bounce">
-                                Contact
-                            </a>
-                        </li>
-                    </ul>
-                </div>
-            </nav>
-        </header>
+<header class="bg-[#B5B5B5] text-black font-bold shadow-md">
+    <div class="max-w-7xl mx-auto px-4 flex items-center justify-between h-16">
+        <div class="text-3xl font-bold italic">NISHA</div>
+
+        <!-- Hamburger for mobile -->
+        <input type="checkbox" id="menu-toggle" class="hidden peer">
+        <label for="menu-toggle" class="md:hidden cursor-pointer">
+            <svg class="w-6 h-6 text-black" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                      d="M4 6h16M4 12h16M4 18h16" />
+            </svg>
+        </label>
+
+        <!-- Navigation Links -->
+        <ul class="hidden md:flex space-x-4 items-center text-xl animate__animated animate__fadeInDown">
+            <li><a href="#home" class="hover:border-b-2 border-[#3A3A40] p-2">Home</a></li>
+            <li><a href="#about" class="hover:border-b-2 border-[#3A3A40] p-2">About</a></li>
+            <li><a href="#education" class="hover:border-b-2 border-[#3A3A40] p-2">Education</a></li>
+            <li><a href="#projects" class="hover:border-b-2 border-[#3A3A40] p-2">Projects</a></li>
+            <li><a href="#internship" class="hover:border-b-2 border-[#3A3A40] p-2">Internship</a></li>
+            <li><a href="#skills" class="hover:border-b-2 border-[#3A3A40] p-2">Skills</a></li>
+            <li><a href="#certificates" class="hover:border-b-2 border-[#3A3A40] p-2">Certificates</a></li>
+            <li><a href="#workshops" class="hover:border-b-2 border-[#3A3A40] p-2">Workshops</a></li>
+            <li><a href="#contact" class="hover:border-b-2 border-[#3A3A40] p-2">Contact</a></li>
+        </ul>
+    </div>
+
+    <!-- Mobile Menu -->
+    <ul class="grid px-4 md:hidden text-xl animate__animated animate__fadeInDown">
+        <li><a href="#home" class="hover:border-b-2 border-[#3A3A40] p-2 block">Home</a></li>
+        <li><a href="#about" class="hover:border-b-2 border-[#3A3A40] p-2 block">About</a></li>
+        <li><a href="#education" class="hover:border-b-2 border-[#3A3A40] p-2 block">Education</a></li>
+        <li><a href="#projects" class="hover:border-b-2 border-[#3A3A40] p-2 block">Projects</a></li>
+        <li><a href="#internship" class="hover:border-b-2 border-[#3A3A40] p-2 block">Internship</a></li>
+        <li><a href="#skills" class="hover:border-b-2 border-[#3A3A40] p-2 block">Skills</a></li>
+        <li><a href="#certificates" class="hover:border-b-2 border-[#3A3A40] p-2 block">Certificates</a></li>
+        <li><a href="#workshops" class="hover:border-b-2 border-[#3A3A40] p-2 block">Workshops</a></li>
+        <li><a href="#contact" class="hover:border-b-2 border-[#3A3A40] p-2 block">Contact</a></li>
+    </ul>
+</header>
 
 
 
@@ -76,15 +62,15 @@
 
         <div id="home">
             <section>
-                <div class="grid grid-cols-2 gap-4 mx-auto">
-                    <div class="my-30 px-28 rounded-full">
+                <div class="grid md:grid-cols-1 lg:grid-cols-2 xl:grid-cols-2 gap-2">
+                    <div class="mx-20 py-20 rounded-full">
                         <img src="./wp_myimg2.jpg" alt="img" height="400" width="400" class="rounded-full">
                     </div>
-                    <div class="py-70">
+                    <div class="mx-25 md:pt-60">
                         <p class="text-white font-bold text-6xl">Hello, I'm Nisha</p>
                         <br>
 
-                        <a href="D:\My_Porfolio\assets\Nisha Resume.pdf">
+                        <a href=".\Nisha Resume.pdf">
                             <button class="bg-[#B5B5B5] text-black font-bold py-2 px-4 rounded hover:bg-purple-200 hover:text-black">
                                 Resume
                             </button>
@@ -99,42 +85,42 @@
         <!--About-->
 
         <div id="about">
-            <section class="bg-[#B5B5B5] p-8 border-25 border-[#3A3A40] rounded">
-                <p class="text-3xl text-black text-center tracking-wider font-bold underline">
-                    ABOUT ME
-                </p>
-                <div class="grid grid-cols-2 gap-8 py-8">
-                    <div>
-                        <p class="text-black font-bold text-xl tracking-wider px-10 py-4">
-                            "Hello, I'm NISHA.
-                            I'm excited to start my professional journey and apply my skills  and
-                            knowledge in a dynamic environment. I'm a enthusiastic person looking to
-                            learn and grow, team player, and passionate about innovation and growth.
-                            I'm eager to take on new challenges and make a positive impact❤️."
-                        </p>
-                    </div>
-                    <div>
-                        <div id="education">
-                            <p class="text-2xl">
-                                <i class="bi bi-people"></i> EDUCATION<br>
+                <section class="bg-[#B5B5B5] p-8 border-25 border-[#3A3A40] rounded my-16">
+                    <p class="text-3xl text-black text-center tracking-wider font-bold underline">
+                        ABOUT ME
+                    </p>
+                    <div class="grid md:grid-cols-1 lg:grid-cols-2 xl:grid-cols-2 gap-18 py-8">
+                        <div>
+                            <p class="text-black font-bold text-xl tracking-wider xl:py-4 lg:py-4">
+                                "Hello, I'm NISHA.
+                                I'm excited to start my professional journey and apply my skills  and
+                                knowledge in a dynamic environment. I'm a enthusiastic person looking to
+                                learn and grow, team player, and passionate about innovation and growth.
+                                I'm eager to take on new challenges and make a positive impact❤️."
                             </p>
-                            <p class="text-xl">Bsc Computer Science
-                            </p>
-                            <div class="text-xl">
-                                <p>
-                                    <span class="font-bold underline">PPT Presentation-Algorithm:</span> Effectively communicated my ideas to the audience
+                        </div>
+                        <div class="py-2">
+                            <div id="education">
+                                <p class="text-2xl">
+                                    <i class="bi bi-people"></i> EDUCATION<br>
                                 </p>
-                                <p>
-                                    <span class="font-bold underline">Certificate Design:</span> Exploring my creativity and design skills
+                                <p class="text-xl">Bsc Computer Science
                                 </p>
-                                <p>
-                                    <span class="font-bold underline">Debugging in Python:</span> Identifying and resolving syntax errors, logical errors, and runtime errors in Python code
-                                </p>
+                                <div class="text-xl">
+                                    <p>
+                                        <span class="font-bold underline">PPT Presentation-Algorithm:</span> Effectively communicated my ideas to the audience
+                                    </p>
+                                    <p>
+                                        <span class="font-bold underline">Certificate Design:</span> Exploring my creativity and design skills
+                                    </p>
+                                    <p>
+                                        <span class="font-bold underline">Debugging in Python:</span> Identifying and resolving syntax errors, logical errors, and runtime errors in Python code
+                                    </p>
+                                </div>
                             </div>
                         </div>
                     </div>
-                </div>
-            </section>
+                </section>
         </div>
 
 
@@ -146,34 +132,34 @@
             <div class="bg-[#B5B5B5] p-8 border-25 border-[#3A3A40] rounded">
                 <div class="text-center text-3xl font-bold underline">
                     PROJECTS</div><br>
-                <div class="border-box border-2 border-black py-2">
-                    <span class="font-bold text-2xl underline px-2">Grocery Website</span>
-                    <P class="text-xl py-4 px-4">
-                        <span class="font-bold">Description:</span> The grocery website project aims to create an online platform for customers to browse and purchase groceries. The website will feature product catalogs, shopping carts, and secure payment gateways.<br>
-                        <span class="font-bold">Frontend Technology:</span> HTML, CSS, Javascript, Tailwindcss and Bootstrap.<br>
-                        <span class="font-bold">Backend Technology and Database:</span> Nodejs, Express and MongoDB.<br>
-                        <span class="font-bold">Key Features:</span> User registration and login functionality, Shopping cart and checkout process, display of available grocery items with relevant information, ability for users to view and submit reviews and ratings for products.
-                    </P>
-                    <button class="my-4 bg-black text-white px-4 ml-8 text-2xl rounded hover:bg-[#1D3E4C] hover:text-white">
-                        View
-                    </button>
+                <div class="grid md:grid-cols-1 lg-grid-cols-1 xl:grid-cols-1">
+                    <div class="border-box border-2 border-black py-2">
+                        <span class="font-bold text-2xl underline px-2">Grocery Website</span>
+                        <P class="text-xl py-4 px-4">
+                            <span class="font-bold">Description:</span> The grocery website project aims to create an online platform for customers to browse and purchase groceries. The website will feature product catalogs, shopping carts, and secure payment gateways.<br>
+                            <span class="font-bold">Frontend Technology:</span> HTML, CSS, Javascript, Tailwindcss and Bootstrap.<br>
+                            <span class="font-bold">Backend Technology and Database:</span> Nodejs, Express and MongoDB.<br>
+                            <span class="font-bold">Key Features:</span> User registration and login functionality, Shopping cart and checkout process, display of available grocery items with relevant information, ability for users to view and submit reviews and ratings for products.
+                        </P>
+                        <button class="my-4 bg-black text-white px-4 ml-8 text-2xl rounded hover:bg-[#1D3E4C] hover:text-white">
+                            View
+                        </button>
+                    </div>
+                    <br>
+                    <div class="border-box border-2 border-black py-4">
 
-                </div>
-                <br>
-                <div class="border-box border-2 border-black py-4">
+                        <span class="font-bold text-2xl underline px-2">Cook Book Website</span>
 
-                    <span class="font-bold text-2xl underline px-2">Cook Book Website</span>
-
-                    <P class="text-xl py-4 px-4">
-                        <span class="font-bold">Description:</span> Developed a recipe website where users can discover, save and share receipes. The website features a clean design, easy-to-use interfave and robust search functionality.<br>
-                        <span class="font-bold">Frontend Technology:</span> HTML, CSS, React js, Javascript, Tailwindcss and Bootstrap.<br>
-                        <span class="font-bold">Key Features:</span> User registration and login functionality, high-quality images of recipes, showcasing finished dishes and cooking steps. responsive design for mobile and desktop.<br>
-                        <span class="font-bold">Impact:</span> Increased user engagement through personalized recipe recommendations, improved user experience through intuitive navigation and search functionality.
-                    </P>
-                    <button class="my-4 bg-black text-white px-4 ml-8 text-2xl rounded hover:bg-[#1D3E4C] hover:text-white">
-                        View
-                    </button>
-
+                        <P class="text-xl py-4 px-4">
+                            <span class="font-bold">Description:</span> Developed a recipe website where users can discover, save and share receipes. The website features a clean design, easy-to-use interfave and robust search functionality.<br>
+                            <span class="font-bold">Frontend Technology:</span> HTML, CSS, React js, Javascript, Tailwindcss and Bootstrap.<br>
+                            <span class="font-bold">Key Features:</span> User registration and login functionality, high-quality images of recipes, showcasing finished dishes and cooking steps. responsive design for mobile and desktop.<br>
+                            <span class="font-bold">Impact:</span> Increased user engagement through personalized recipe recommendations, improved user experience through intuitive navigation and search functionality.
+                        </P>
+                        <button class="my-4 bg-black text-white px-4 ml-8 text-2xl rounded hover:bg-[#1D3E4C] hover:text-white">
+                            View
+                        </button>
+                    </div>
                 </div>
             </div>
         </section>
@@ -186,10 +172,10 @@
                 </div>
                 <div class="border-box border-2 border-black text-2xl py-8 p-4">
                     <p class="text-xl font-bold">
-                        ROLE: TECH ASSOCIATIVE INTERN <br>
+                        ROLE: TECH ASSOCIATE INTERN <br>
                         Pixel In, LP
                     </p>
-                    <div class="pl-30 py-6">
+                    <div class="grid md:grid-cols-1 lg:grid-cols-1 xl:grid-cols-1 gap-6 py-6 text-center">
                         <p>
                             <i class="bi bi-chevron-double-right"></i> Designed and implemented user interface components using React, Tailwindcss and Javascript
                         </p>
@@ -214,50 +200,61 @@
                 SKILLS
             </div>
 
-            <section class="py-6">
-                <div class="grid grid-cols-6 px-50 p-5">
-                    <div class="">
-                        <img src="./html.png" alt="img" class="h-20 w-20 border-2 border-black p-4">
-                        <span class="text-xl pl-4"> HTML</span>
+            <section>
+                <div class="grid grid-cols-1 md:grid-cols-1 lg:grid-cols-3 xl:grid-cols-5 mx-18 p-10 gap-10 my-4">
+                    <div class="grid grid-cols-1 gap-10">
+                        <div>
+                            <img src="./html.png" alt="img" class="h-20 w-20 border-2 border-black p-4">
+                            <span class="text-xl pl-4"> HTML</span>
+                        </div>
+                        <div>
+                            <img src=".css.png" alt="img" class="h-20 w-20 border-2 border-black p-4">
+                            <span class="text-xl pl-6"> CSS</span>
+                        </div>
                     </div>
-                    <div class="">
-                        <img src="./css.png" alt="img" class="h-20 w-20 border-2 border-black p-4">
-                        <span class="text-xl pl-6"> CSS</span>
-                    </div>
-                    <div class="">
-                        <img src="./physics.png" alt="img" class="h-20 w-20 border-2 border-black p-4">
-                        <span class="text-xl pl-4"> React</span>
-                    </div>
-                    <div class="">
-                        <img src="./java-script.png" alt="img" class="h-20 w-20 border-2 border-black p-4">
-                        <span class="text-xl"> Java Script</span>
-                    </div>
-                    <div class="">
-                        <img src="./python.jpg" alt="img" class="h-20 w-20 border-2 border-black p-4">
-                        <span class="text-xl pl-2"> Python</span>
-                    </div>
-                    <div class="">
-                        <img src="./bootstrap.png" alt="img" class="h-20 w-20 border-2 border-black p-4">
-                        <span class="text-xl"> Bootstrap</span>
-                    </div>
-                </div>
 
-                <div class="grid grid-cols-4 px-80 p-5">
-                    <div class="">
-                        <img src="./tailwindcss-mark.d52e9897.svg" alt="img" class="h-20 w-20 border-2 border-black p-4 pl-4">
-                        <span class="text-xl"> Tailwind</span>
+                    <div class="grid grid-cols-1 gap-10">
+                        <div>
+                            <img src="./physics.png" alt="img" class="h-20 w-20 border-2 border-black p-4">
+                            <span class="text-xl pl-4"> React</span>
+                        </div>
+                        <div>
+                            <img src="./java-script.png" alt="img" class="h-20 w-20 border-2 border-black p-4">
+                            <span class="text-xl"> Java Script</span>
+                        </div>
                     </div>
-                    <div class="">
-                        <img src="./xd.png" alt="img" class="h-20 w-20 border-2 border-black p-4">
-                        <span class="text-xl"> Adobe XD</span>
+
+                    <div class="grid gap-10">
+                        <div>
+                            <img src="./python.jpg" alt="img" class="h-20 w-20 border-2 border-black p-4">
+                            <span class="text-xl pl-2"> Python</span>
+                        </div>
+                        <div>
+                            <img src="./bootstrap.png" alt="img" class="h-20 w-20 border-2 border-black p-4">
+                            <span class="text-xl"> Bootstrap</span>
+                        </div>
                     </div>
-                    <div class="">
-                        <img src="./figma.png" alt="img" class="h-20 w-20 border-2 border-black p-4">
-                        <span class="text-xl pl-4"> Figma</span>
+
+                    <div class="grid gap-10">
+                        <div>
+                            <img src="./tailwindcss-mark.d52e9897.svg" alt="img" class="h-20 w-20 border-2 border-black p-4 pl-4">
+                            <span class="text-xl"> Tailwind</span>
+                        </div>
+                        <div>
+                            <img src="./xd.png" alt="img" class="h-20 w-20 border-2 border-black p-4">
+                            <span class="text-xl"> Adobe XD</span>
+                        </div>
                     </div>
-                    <div class="">
-                        <img src="./word.png" alt="img" class="h-20 w-20 border-2 border-black p-4">
-                        <span class="text-xl"> Ms Word</span>
+
+                    <div class="grid grid-cols-1 gap-10">
+                        <div>
+                            <img src="./figma.png" alt="img" class="h-20 w-20 border-2 border-black p-4">
+                            <span class="text-xl pl-4"> Figma</span>
+                        </div>
+                        <div>
+                            <img src="./word.png" alt="img" class="h-20 w-20 border-2 border-black p-4">
+                            <span class="text-xl"> Ms Word</span>
+                        </div>
                     </div>
                 </div>
             </section>
@@ -278,13 +275,13 @@
                     <hr class="border-1 border-black w-16 text-center">
                 </div>
 
-                <div class="grid grid-cols-4 gap-4 px-3 py-4">
+                <div class="grid md:grid-cols-1 lg:grid-cols-2 xl:grid-cols-4 gap-6 py-4">
                     <div class="box-border border-3 border-white text-center bg-[#3A3A40] text-[#B5B5B5] p-10 my-2">
                         <div class="flex flex-col justify-center items-center font-bold text-2xl my-4">
                             Machine Learning with Python in Great Learning
                         </div>
 
-                        <a href="./great learning.jpg">
+                        <a href=./great learning.jpg">
                             <button class="bg-purple-300 text-black font-bold py-2 px-4 rounded hover:bg-blue-600 hover:text-white">
                                 <i class="bi bi-eye-fill"></i> View
                             </button>
@@ -310,7 +307,7 @@
                         </div>
 
 
-                        <a href=".\Infosys design thinking .jpg">
+                        <a href="./mern.jpg">
                             <button class="bg-purple-300 text-black font-bold py-2 px-4 rounded hover:bg-blue-600 hover:text-white">
                                 <i class="bi bi-eye-fill"></i> View
                             </button>
@@ -348,7 +345,7 @@
                     <hr class="border-1 border-black w-16 text-center">
                 </div>
 
-                <div class="grid grid-cols-2 gap-4 px-3 py-4">
+                <div class="grid md:grid-cols-1 lg:grid-cols-2 xl:grid-cols-2 gap-8 py-4">
                     <div class="box-border border-3 border-white text-center bg-[#3A3A40] text-[#B5B5B5] p-10 my-2">
                         <div class="flex flex-col justify-center items-center font-bold text-2xl my-4">
                             Role of Rust Language in Blockchain Development at
@@ -390,8 +387,8 @@
                     <hr class="border-1 border-black w-16 text-center">
                 </div>
 
-                <div class="px-50 py-5">
-                    <div class="grid grid-cols-2 gap-4 rounded-full text-center bg-[#3A3A40] text-[#B5B5B5] p-4 my-2">
+                <div class="grid md:grid-cols-1 lg:grid-cols-1 xl:grid-cols-1 py-5">
+                    <div class="rounded-full text-center bg-[#3A3A40] text-[#B5B5B5] p-4 my-2">
                         <p>
                             <a href="mailto:nishatharun57@gmail.com">
                                 <i class="bi bi-envelope"></i> nishatharun57@gmail.com
@@ -411,7 +408,7 @@
 
 
         <footer>
-            <section class="bg-[#3A3A40] text-white font-bold">
+            <section class="grid md:grid-cols-1 lg:grid-cols-1 xl:grid-cols-1 bg-[#3A3A40] text-white font-bold">
                 <div class="text-center tracking-widest py-2">
                     <p class="pb-4">Copyright <i class="bi bi-c-circle"></i> 2025 Nisha V. All Rights Reserved.</p>
                 </div>

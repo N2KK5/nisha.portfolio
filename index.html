@@ -538,68 +538,36 @@
 
 
 <script>
-    // --- JavaScript for Interactivity ---
-
-    const navLinks = document.querySelectorAll('.nav-link');
+    // --- JavaScript for Mobile Menu Interactivity ---
     const mobileMenuButton = document.getElementById('mobile-menu-button');
     const mobileMenu = document.getElementById('mobile-menu');
+    const menuIcons = mobileMenuButton.querySelectorAll('svg');
 
-    // 1. Mobile Menu Toggle Logic
     mobileMenuButton.addEventListener('click', () => {
-        const isExpanded = mobileMenuButton.getAttribute('aria-expanded') === 'true' || false;
-        mobileMenuButton.setAttribute('aria-expanded', !isExpanded);
+        // Toggle mobile menu visibility
         mobileMenu.classList.toggle('hidden');
 
-        // Toggle hamburger/close icons
-        const [openIcon, closeIcon] = mobileMenuButton.querySelectorAll('svg');
-        openIcon.classList.toggle('hidden');
-        closeIcon.classList.toggle('hidden');
+        // Toggle between hamburger and close icon
+        menuIcons.forEach(icon => icon.classList.toggle('hidden'));
     });
 
-    // 2. Smooth Scrolling Logic
+    // Close mobile menu when a link is clicked (for better UX)
+    const navLinks = document.querySelectorAll('.nav-link');
     navLinks.forEach(link => {
-        link.addEventListener('click', function(e) {
-            // Close mobile menu if open
+        link.addEventListener('click', () => {
             if (!mobileMenu.classList.contains('hidden')) {
                 mobileMenu.classList.add('hidden');
-                mobileMenuButton.setAttribute('aria-expanded', 'false');
-
-                // Reset mobile button icons
-                const [openIcon, closeIcon] = mobileMenuButton.querySelectorAll('svg');
-                openIcon.classList.remove('hidden');
-                closeIcon.classList.add('hidden');
-            }
-
-            const targetId = this.getAttribute('href').substring(1);
-            // Handle Home link (href="#") -> targetId will be empty string
-            const targetElement = targetId ? document.getElementById(targetId) : document.body;
-
-            if (targetElement) {
-                e.preventDefault();
-
-                let offsetPosition = 0;
-                if (targetId) {
-                    // Scrolls to the element, accounting for the fixed navigation bar height (80px)
-                    const offset = 80;
-                    const bodyRect = document.body.getBoundingClientRect().top;
-                    const elementRect = targetElement.getBoundingClientRect().top;
-                    const elementPosition = elementRect - bodyRect;
-                    offsetPosition = elementPosition - offset;
-                }
-
-                window.scrollTo({
-                    top: offsetPosition,
-                    behavior: "smooth"
-                });
+                menuIcons.forEach(icon => icon.classList.toggle('hidden'));
             }
         });
     });
-
 </script>
+
 
 
 </body>
 </html>
+
 
 
 

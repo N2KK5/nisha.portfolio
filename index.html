@@ -488,13 +488,14 @@
             </div>
 
             <!-- Updated Contact Card Container -->
-            <div class="max-w-lg mx-auto">
-                <div class="grid md:grid-cols-1 lg:grid-cols-1 xl:grid-cols-1 gap-2 space-y-4">
+            <div class="w-full max-w-lg mx-auto bg-gray-800 p-6 sm:p-8 rounded-2xl shadow-2xl">
 
+                <div class="grid gap-4">
                     <!-- Email Block -->
                     <div class="flex items-center space-x-4 p-4 bg-[#3A3A40] rounded-xl transition duration-300 hover:bg-violet-600 hover:shadow-lg hover:shadow-violet-800/50 group">
-                        <i class="bi bi-envelope text-xl text-violet-400 group-hover:text-white"></i>
-                        <p class="text-white text-lg font-base truncate">
+                        <!-- Icon is slightly larger for better touch targeting on mobile -->
+                        <i class="bi bi-envelope-fill text-2xl text-violet-400 group-hover:text-white"></i>
+                        <p class="text-white text-lg font-medium truncate">
                             <a href="mailto:nishatharun57@gmail.com" class="hover:underline">
                                 nishatharun57@gmail.com
                             </a>
@@ -503,43 +504,43 @@
 
                     <!-- Phone Block -->
                     <div class="flex items-center space-x-4 p-4 bg-[#3A3A40] rounded-xl transition duration-300 hover:bg-violet-600 hover:shadow-lg hover:shadow-violet-800/50 group">
-                        <i class="bi bi-telephone text-base text-violet-400 group-hover:text-white"></i>
+                        <i class="bi bi-telephone-fill text-2xl text-violet-400 group-hover:text-white"></i>
                         <p class="text-white text-lg font-medium">
-                            +91 7540092577
+                            <a href="tel:+917540092577" class="hover:underline">
+                                +91 7540092577
+                            </a>
                         </p>
                     </div>
-
                 </div>
 
                 <!-- Separator -->
-                <hr class="my-6 border-black">
+                <hr class="my-8 border-gray-600">
 
                 <!-- Social Links -->
                 <div class="text-center">
-                    <h3 class="text-xl font-semibold text-black mb-4">Find Me Online</h3>
+                    <h3 class="text-2xl font-semibold text-white mb-6">Find Me Online</h3>
 
                     <div class="flex justify-center space-x-8">
 
                         <!-- GitHub Link -->
                         <a href="https://github.com/N2KK5/" target="_blank"
                            aria-label="GitHub Profile"
-                           class="p-3 text-4xl text-black transition transform duration-300 hover:scale-125 hover:text-white hover:bg-gray-900 rounded-full">
+                           class="social-link p-4 text-4xl text-white transition transform duration-300 hover:scale-125 bg-[#3A3A40] hover:bg-gray-900 rounded-full flex items-center justify-center">
                             <i class="bi bi-github"></i>
                         </a>
 
                         <!-- LinkedIn Link -->
                         <a href="https://www.linkedin.com/in/nisha-v-0a92892ba" target="_blank"
                            aria-label="LinkedIn Profile"
-                           class="p-3 text-4xl text-black transition transform duration-300 hover:scale-125 hover:text-blue-400 hover:bg-gray-900 rounded-full">
+                           class="social-link p-4 text-4xl text-white transition transform duration-300 hover:scale-125 bg-[#3A3A40] hover:bg-blue-600 rounded-full flex items-center justify-center">
                             <i class="bi bi-linkedin"></i>
                         </a>
                     </div>
                 </div>
-
             </div>
+
         </section>
     </div>
-
 
 
 
@@ -619,6 +620,7 @@
 
 </body>
 </html>
+
 
 
 

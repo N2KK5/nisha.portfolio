@@ -14,45 +14,62 @@
 
 <section class="bg-[#3A3A40]">
 
-    <header class="bg-[#B5B5B5] text-black font-bold shadow-md">
-        <div class="max-w-7xl mx-auto px-4 flex items-center justify-between h-16">
-            <div class="text-3xl font-bold italic">NISHA</div>
+    <!-- Navigation Bar (Fully Responsive) -->
+    <nav class="fixed top-0 z-50 w-full bg-[#B5B5B5] backdrop-blur-sm shadow-lg">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex items-center justify-between h-16">
+                <!-- Brand/Name -->
+                <div class="flex items-center animate__animated animate__fadeInDown">
+                    <a href="#" class="text-4xl font-bold italic">
+                        NISHA
+                    </a>
+                </div>
 
-            <!-- Hamburger for mobile -->
-            <input type="checkbox" id="menu-toggle" class="hidden peer">
-            <label for="menu-toggle" class="md:hidden cursor-pointer">
-                <svg class="w-6 h-6 text-black" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                          d="M4 6h16M4 12h16M4 18h16" />
-                </svg>
-            </label>
+                <!-- Desktop Links -->
+                <div class="hidden md:block animate__animated animate__fadeInDown">
+                    <div class="ml-10 flex items-baseline space-x-4">
+                        <a href="#home" class="nav-link text-black px-3 py-2 text-lg rounded-md hover:border-b-2 border-[#3A3A40] font-bold p-2">Home</a>
+                        <a href="#about" class="nav-link text-black px-3 py-2 text-lg rounded-md hover:border-b-2 border-[#3A3A40] font-bold p-2">About</a>
+                        <a href="#projects" class="nav-link text-black px-3 py-2 text-lg rounded-md hover:border-b-2 border-[#3A3A40] font-bold p-2">Projects</a>
+                        <a href="#internship" class="nav-link text-black px-3 py-2 text-lg rounded-md hover:border-b-2 border-[#3A3A40] font-bold p-2">Internship</a>
+                        <a href="#skills" class="nav-link text-black px-3 py-2 text-lg rounded-md hover:border-b-2 border-[#3A3A40] font-bold p-2">Skills</a>
+                        <a href="#workshops" class="nav-link text-black px-3 py-2 text-lg rounded-md hover:border-b-2 border-[#3A3A40] font-bold p-2">Workshops</a>
+                        <a href="#certificates" class="nav-link text-black px-3 py-2 text-lg rounded-md hover:border-b-2 border-[#3A3A40] font-bold p-2">Certifications</a>
+                        <a href="#contact" class="nav-link text-black px-3 py-2 text-lg hover:border-b-2 border-[#3A3A40] font-bold p-2">Contact</a>
+                    </div>
+                </div>
 
-            <!-- Navigation Links -->
-            <ul class="hidden md:flex space-x-4 items-center text-xl animate__animated animate__fadeInDown">
-                <li><a href="#home" class="hover:border-b-2 border-[#3A3A40] p-2">Home</a></li>
-                <li><a href="#about" class="hover:border-b-2 border-[#3A3A40] p-2">About</a></li>
-                <li><a href="#projects" class="hover:border-b-2 border-[#3A3A40] p-2">Projects</a></li>
-                <li><a href="#internship" class="hover:border-b-2 border-[#3A3A40] p-2">Internship</a></li>
-                <li><a href="#skills" class="hover:border-b-2 border-[#3A3A40] p-2">Skills</a></li>
-                <li><a href="#certificates" class="hover:border-b-2 border-[#3A3A40] p-2">Certificates</a></li>
-                <li><a href="#workshops" class="hover:border-b-2 border-[#3A3A40] p-2">Workshops</a></li>
-                <li><a href="#contact" class="hover:border-b-2 border-[#3A3A40] p-2">Contact</a></li>
-            </ul>
+                <!-- Mobile Menu Button -->
+                <div class="-mr-2 flex md:hidden">
+                    <button id="mobile-menu-button" type="button" class="inline-flex items-center justify-center p-2 rounded-md text- hover:text-white hover:bg-[#3A3A40] focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-neutral-400 focus:ring-neutral-600" aria-controls="mobile-menu" aria-expanded="false">
+                        <span class="sr-only">Open main menu</span>
+                        <!-- Hamburger Icon -->
+                        <svg class="block h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+                        </svg>
+                        <!-- Close Icon (Hidden by default) -->
+                        <svg class="hidden h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
+                        </svg>
+                    </button>
+                </div>
+            </div>
         </div>
 
-        <!-- Mobile Menu -->
-        <ul class="grid px-4 md:hidden text-xl animate__animated animate__fadeInDown">
-            <li><a href="#home" class="hover:border-b-2 border-[#3A3A40] p-2 block">Home</a></li>
-            <li><a href="#about" class="hover:border-b-2 border-[#3A3A40] p-2 block">About</a></li>
-            <li><a href="#projects" class="hover:border-b-2 border-[#3A3A40] p-2 block">Projects</a></li>
-            <li><a href="#internship" class="hover:border-b-2 border-[#3A3A40] p-2 block">Internship</a></li>
-            <li><a href="#skills" class="hover:border-b-2 border-[#3A3A40] p-2 block">Skills</a></li>
-            <li><a href="#certificates" class="hover:border-b-2 border-[#3A3A40] p-2 block">Certificates</a></li>
-            <li><a href="#workshops" class="hover:border-b-2 border-[#3A3A40] p-2 block">Workshops</a></li>
-            <li><a href="#contact" class="hover:border-b-2 border-[#3A3A40] p-2 block">Contact</a></li>
-        </ul>
-    </header>
-
+        <!-- Mobile Menu Links -->
+        <div class="md:hidden hidden" id="mobile-menu">
+            <div class="px-2 pt-2 pb-3 space-y-1 sm:px-3">
+                <a href="#home" class="nav-link block px-3 py-2 rounded-md text-base font-medium text-white bg-[#3A3A40]" aria-current="page">Home</a>
+                <a href="#about" class="nav-link block px-3 py-2 rounded-md text-base font-medium text-[#3A3A40] hover:bg-[#3A3A40] hover:text-white">About</a>
+                <a href="#projects" class="nav-link block px-3 py-2 rounded-md text-base font-medium text-[#3A3A40] hover:bg-[#3A3A40] hover:text-white">Projects</a>
+                <a href="#internship" class="nav-link block px-3 py-2 rounded-md text-base font-medium text-[#3A3A40] hover:bg-[#3A3A40] hover:text-white">Internship</a>
+                <a href="#skills" class="nav-link block px-3 py-2 rounded-md text-base font-medium text-[#3A3A40] hover:bg-[#3A3A40] hover:text-white">Skills</a>
+                <a href="#certificates" class="nav-link block px-3 py-2 rounded-md text-base font-medium text-[#3A3A40] hover:bg-[#3A3A40] hover:text-white">Certificates</a>
+                <a href="#workshops" class="nav-link block px-3 py-2 rounded-md text-base font-medium text-[#3A3A40] hover:bg-[#3A3A40] hover:text-white">Workshops</a>
+                <a href="#contact" class="nav-link block px-3 py-2 rounded-md text-base font-medium text-[#3A3A40] hover:bg-[#3A3A40] hover:text-white">Contact</a>
+            </div>
+        </div>
+    </nav>
 
 
     <!--Home-->
@@ -61,8 +78,8 @@
     <div id="home">
         <section>
             <div class="grid md:grid-cols-1 lg:grid-cols-2 xl:grid-cols-2 gap-2">
-                <div class="mx-20 py-20 rounded-full">
-                    <img src="./wp_myimg2.jpg" alt="img" height="400" width="400" class="rounded-full">
+                <div class="mx-26 my-25 rounded-full">
+                    <img src="../assets/wp_myimg2.jpg" alt="img" height="400" width="400" class="rounded-full">
                 </div>
                 <div class="mx-25 md:pt-60">
                     <p class="text-white font-bold text-6xl">Hi, I'm Nisha</p>
@@ -70,7 +87,10 @@
 
                     <a href=".\Nisha_Resume.pdf">
                         <button class="bg-[#B5B5B5] text-black font-bold rounded-lg shadow-lg transition duration-300 transform hover:-translate-y-1 py-2 px-4 hover:bg-purple-200 hover:text-black">
-                            <i class="bi bi-cloud-arrow-down-fill text-lg"></i> View Resume
+                            <p class="flex items-center justify-center gap-2 text-lg">
+                                <i class="bi bi-cloud-arrow-down-fill text-xl"></i>
+                                Download Resume
+                            </p>
                         </button>
                     </a>
                 </div>
@@ -83,12 +103,17 @@
     <!-- About Section -->
     <div id="about">
         <section class="bg-[#B5B5B5] p-8 border-25 border-[#3A3A40] rounded my-16">
-            <p class="text-3xl text-black text-center tracking-wider font-bold underline"> ABOUT ME </p>
+            <div class="text-center py-4 flex flex-col justify-center items-center gap-2">
+                <p class="text-3xl tracking-wider font-bold text-center">
+                    ABOUT ME
+                </p>
+                <hr class="border-1 border-black w-16 text-center">
+            </div>            
             <div class="grid md:grid-cols-1 lg:grid-cols-2 xl:grid-cols-2 gap-18 py-8">
                 <div class="border-2 border-[--color-primary] rounded-xl p-6 shadow-lg transition-transform duration-300 hover:scale-[1.01]">
                 <p class="my-4 text-black font-bold text-xl tracking-wider xl:py-4 lg:py-4">
                     Hi — I’m Nisha, a recent BSc Computer Science graduate passionate about building user-friendly
-                    website. I enjoy solving problems with code, learning new technologies, and collaborating
+                    web applications. I enjoy solving problems with code, learning new technologies, and collaborating
                     with teams to create useful, accessible products. I’m currently looking for opportunities where I can contribute,
                     learn, and grow. </p> </div> <div class="py-2">
                 <div>
@@ -97,16 +122,9 @@
                     <h3 class="text-2xl font-bold my-4 flex items-center">
                         <i class="bi bi-mortarboard-fill mr-3"></i> EDUCATION
                     </h3>
-                    <p class="text-xl font-bold mb-4">BSc Computer Science</p>
-                    <div class="grid grid-cols-2 gap-2 text-lg space-y-3 list-none pl-0">
-                        <div>
-                            <span class="mr-3 mt-1">&#10003;</span><span class="font-bold">PPT Presentation-Algorithm:</span>
-                        </div>
-                        <div>
-                            Effectively communicated complex ideas to the audience.
-                        </div>
-                    </div>
-                    <div class="grid grid-cols-2 gap-2 text-lg space-y-3 list-none pl-0">
+                    <p class="text-xl font-bold mb-4">Bsc Computer Science <br> <span class="text-base">SSKV College of Arts & Science for Women</span>
+                    </p>
+                    <div class="grid md:grid-cols-1 lg:grid-cols-2 xl:grid-cols-2 gap-2 text-lg">
                         <div>
                             <span class="mr-3 mt-1">&#10003;</span><span class="font-bold">UI/UX Design:</span>
                         </div>
@@ -114,7 +132,7 @@
                             Explored my creativity and design skills using tools like Figma/Adobe XD.
                         </div>
                     </div>
-                    <div class="grid grid-cols-2 gap-2 text-lg space-y-3 list-none pl-0">
+                    <div class="grid md:grid-cols-1 lg:grid-cols-2 xl:grid-cols-2 gap-2 text-lg">
                         <div>
                             <span class="mr-3 mt-1">&#10003;</span><span class="font-bold">Debugging in Python:</span>
                         </div>
@@ -134,11 +152,16 @@
 
     <section id="projects">
         <div class="bg-[#B5B5B5] p-8 border-25 border-[#3A3A40] rounded">
-            <div class="text-center text-3xl font-bold underline">
-                PROJECTS</div><br>
+            <div class="text-center py-4 flex flex-col justify-center items-center gap-2">
+                <p class="text-3xl tracking-wider font-bold text-center">
+                    PROJECTS
+                </p>
+                <hr class="border-1 border-black w-16 text-center">
+            </div>
+
             <div class="grid md:grid-cols-1 lg-grid-cols-1 xl:grid-cols-1">
                 <div class="border-2 border-[--color-primary] rounded-xl p-6 shadow-lg transition-transform duration-300 hover:scale-[1.01]">
-                    <h3 class="font-bold text-2xl text-[--color-primary] mb-4">
+                    <h3 class="font-bold text-2xl mb-4">
                         <i class="bi bi-cart4 mr-2"></i> <span class="underline">Grocery Website</span>
                     </h3>
                     <p class="text-lg">
@@ -177,12 +200,17 @@
 
     <!-- Internship -->
     <section id="internship" class="bg-[#B5B5B5] p-8 border-25 border-[#3A3A40] rounded">
-        <div class="text-center font-bold text-3xl underline pb-6">
-            INTERNSHIP
+        <div class="text-center py-4 flex flex-col justify-center items-center gap-2">
+            <p class="text-3xl tracking-wider font-bold text-center">
+                INTERNSHIP
+            </p>
+            <hr class="border-1 border-black w-16 text-center">
         </div>
+
+
         <div class="border-2 border-[--color-primary] rounded-xl p-6 shadow-lg transition-transform duration-300 hover:scale-[1.01]">
             <p class="text-xl font-bold">
-                ROLE: TECH ASSOCIATE INTERN <br>
+                Role:  Tech Associate Intern <br>
                 Pixel In, LP
             </p>
 
@@ -194,7 +222,8 @@
                             <!-- Icon for development/coding -->
                     <i class="bi bi-code-slash text-xl"></i>
                     <p class="text-xl pl-2">
-                        Designed and implemented user interface components using React, Tailwindcss and Javascript.                </li>
+                        Designed and implemented user interface components using React, Tailwindcss and Javascript.               
+                </li>
 
                 <!-- Item 2: Software Development & Testing -->
                 <li class="flex items-start">
@@ -221,71 +250,114 @@
     <!--Skills-->
 
     <div id="skills" class="bg-[#B5B5B5] p-8 border-25 border-[#3A3A40] rounded">
-        <div class="text-center font-bold text-3xl underline">
-            SKILLS
+        <div class="text-center py-4 flex flex-col justify-center items-center gap-2">
+            <p class="text-3xl tracking-wider font-bold text-center">
+                SKILLS
+            </p>
+            <hr class="border-1 border-black w-16 text-center">
         </div>
 
 
-        <div class="grid md:grid-cols-1 lg:grid-cols-4 xl:grid-cols-4 gap-6 my-6">
-            <!-- Skill Card Template -->
-            <div class="bg-[#3A3A40] p-6 rounded-xl shadow-xl transition duration-300 card-hover border border-white text-center shadow-lg transition-transform duration-300 hover:scale-[1.01]">
-                <img src="./html.png" alt="CSS Icon" class="h-16 w-16 mx-auto mb-3 p-2 rounded-lg border border-purple-300">
-                <span class="text-xl font-bold text-slate-100">HTML</span>
+        <!-- Improved Grid Layout for Skills -->
+        <div class="grid md:grid-cols-2 lg:grid-cols-4 xl:grid-cols-3 gap-6 my-6">
+
+            <!-- HTML -->
+            <div class="bg-[#3A3A40] p-6 rounded-2xl shadow-xl transition duration-500 transform hover:-translate-y-1 border border-transparent hover:border-purple-400">
+                <div class="flex flex-col items-center">
+                    <img src="./html.png" alt="HTML Icon" class="h-14 w-14 mb-3 p-1 rounded-full bg-white/10 ring-2 ring-purple-400">
+                    <span class="text-xl font-extrabold text-purple-300 mb-2">HTML</span>
+                    <p class="text-sm text-slate-200 text-center leading-tight">
+                        Proficient in HTML5 to structure webpage content and ensure accessibility.
+                    </p>
+                </div>
             </div>
 
-            <div class="bg-[#3A3A40] p-6 rounded-xl shadow-xl transition duration-300 card-hover border border-white text-center shadow-lg transition-transform duration-300 hover:scale-[1.01]">
-                <img src="./css.png" alt="CSS Icon" class="h-16 w-16 mx-auto mb-3 p-2 rounded-lg border border-purple-300">
-                <span class="text-xl font-bold text-slate-100">CSS</span>
+            <!-- CSS -->
+            <div class="bg-[#3A3A40] p-6 rounded-2xl shadow-xl transition duration-500 transform hover:-translate-y-1 border border-transparent hover:border-purple-400">
+                <div class="flex flex-col items-center">
+                    <img src=".css.png" alt="CSS Icon" class="h-14 w-14 mb-3 p-1 rounded-full bg-white/10 ring-2 ring-purple-400">
+                    <span class="text-xl font-extrabold text-purple-300 mb-2">CSS</span>
+                    <p class="text-sm text-slate-200 text-center leading-tight">
+                        Skilled in using CSS, Flexbox, and Grid to style pages and create responsive layouts.
+                    </p>
+                </div>
             </div>
 
-            <div class="bg-[#3A3A40] p-6 rounded-xl shadow-xl transition duration-300 card-hover border border-white text-center shadow-lg transition-transform duration-300 hover:scale-[1.01]">
-                <img src="./physics.png" alt="CSS Icon" class="h-16 w-16 mx-auto mb-3 p-2 rounded-lg border border-purple-300">
-                <span class="text-xl font-bold text-slate-100">React</span>
+            <!-- React -->
+            <div class="bg-[#3A3A40] p-6 rounded-2xl shadow-xl transition duration-500 transform hover:-translate-y-1 border border-transparent hover:border-purple-400">
+                <div class="flex flex-col items-center">
+                    <img src="./physics.png" alt="React Icon" class="h-14 w-14 mb-3 p-1 rounded-full bg-white/10 ring-2 ring-purple-400">
+                    <span class="text-xl font-extrabold text-purple-300 mb-2">React</span>
+                    <p class="text-sm text-slate-200 text-center leading-tight">
+                        I build dynamic front-end apps using "React components" and Hooks for better performance.
+                    </p>
+                </div>
             </div>
 
-            <div class="bg-[#3A3A40] p-6 rounded-xl shadow-xl transition duration-300 card-hover border border-white text-center shadow-lg transition-transform duration-300 hover:scale-[1.01]">
-                <img src="./java-script.png" alt="CSS Icon" class="h-16 w-16 mx-auto mb-3 p-2 rounded-lg border border-purple-300">
-                <span class="text-xl font-bold text-slate-100">JavaScript</span>
+            <!-- JavaScript -->
+            <div class="bg-[#3A3A40] p-6 rounded-2xl shadow-xl transition duration-500 transform hover:-translate-y-1 border border-transparent hover:border-purple-400">
+                <div class="flex flex-col items-center">
+                    <img src="./java-script.png" alt="JavaScript Icon" class="h-14 w-14 mb-3 p-1 rounded-full bg-white/10 ring-2 ring-purple-400">
+                    <span class="text-xl font-extrabold text-purple-300 mb-2">JavaScript</span>
+                    <p class="text-sm text-slate-200 text-center leading-tight">
+                        Strong in ES6+ features to add logic and make web pages interactive.
+                    </p>
+                </div>
             </div>
 
-            <div class="bg-[#3A3A40] p-6 rounded-xl shadow-xl transition duration-300 card-hover border border-white text-center shadow-lg transition-transform duration-300 hover:scale-[1.01]">
-                <img src="./python.jpg" alt="CSS Icon" class="h-16 w-16 mx-auto mb-3 p-2 rounded-lg border border-purple-300">
-                <span class="text-xl font-bold text-slate-100">Python</span>
+            <!-- Tailwind CSS -->
+            <div class="bg-[#3A3A40] p-6 rounded-2xl shadow-xl transition duration-500 transform hover:-translate-y-1 border border-transparent hover:border-purple-400">
+                <div class="flex flex-col items-center">
+                    <img src="./tailwindcss-mark.d52e9897.svg" alt="Tailwind CSS Icon" class="h-14 w-14 mb-3 p-1 rounded-full bg-white/10 ring-2 ring-purple-400">
+                    <span class="text-xl font-extrabold text-purple-300 mb-2">Tailwind CSS</span>
+                    <p class="text-sm text-slate-200 text-center leading-tight">
+                        Expert at using this utility framework to quickly build "responsive" and modern interfaces.
+                    </p>
+                </div>
             </div>
 
-            <div class="bg-[#3A3A40] p-6 rounded-xl shadow-xl transition duration-300 card-hover border border-white text-center shadow-lg transition-transform duration-300 hover:scale-[1.01]">
-                <img src="./tailwindcss-mark.d52e9897.svg" alt="CSS Icon" class="h-16 w-16 mx-auto mb-3 p-2 rounded-lg border border-purple-300">
-                <span class="text-xl font-bold text-slate-100">Tailwind CSS</span>
+            <!-- Figma -->
+            <div class="bg-[#3A3A40] p-6 rounded-2xl shadow-xl transition duration-500 transform hover:-translate-y-1 border border-transparent hover:border-purple-400">
+                <div class="flex flex-col items-center">
+                    <img src="./figma.png" alt="Figma Icon" class="h-14 w-14 mb-3 p-1 rounded-full bg-white/10 ring-2 ring-purple-400">
+                    <span class="text-xl font-extrabold text-purple-300 mb-2">Figma</span>
+                    <p class="text-sm text-slate-200 text-center leading-tight">
+                        Experienced in UI/UX design and creating high-fidelity prototypes and wireframes.
+                    </p>
+                </div>
             </div>
 
-            <div class="bg-[#3A3A40] p-6 rounded-xl shadow-xl transition duration-300 card-hover border border-white text-center shadow-lg transition-transform duration-300 hover:scale-[1.01]">
-                <img src="./bootstrap.png" alt="CSS Icon" class="h-16 w-16 mx-auto mb-3 p-2 rounded-lg border border-purple-300">
-                <span class="text-xl font-bold text-slate-100">Bootstrap</span>
+            <!-- Adobe XD -->
+            <div class="bg-[#3A3A40] p-6 rounded-2xl shadow-xl transition duration-500 transform hover:-translate-y-1 border border-transparent hover:border-purple-400">
+                <div class="flex flex-col items-center">
+                    <img src="./xd.png" alt="Adobe XD Icon" class="h-14 w-14 mb-3 p-1 rounded-full bg-white/10 ring-2 ring-purple-400">
+                    <span class="text-xl font-extrabold text-purple-300 mb-2">Adobe XD</span>
+                    <p class="text-sm text-slate-200 text-center leading-tight">
+                        Used for collaborative design, creating interactive prototypes, and mapping user flows.
+                    </p>
+                </div>
             </div>
 
-            <div class="bg-[#3A3A40] p-6 rounded-xl shadow-xl transition duration-300 card-hover border border-white text-center shadow-lg transition-transform duration-300 hover:scale-[1.01]">
-                <img src="./figma.png" alt="CSS Icon" class="h-16 w-16 mx-auto mb-3 p-2 rounded-lg border border-purple-300">
-                <span class="text-xl font-bold text-slate-100">Figma</span>
+            <!-- MySQL -->
+            <div class="bg-[#3A3A40] p-6 rounded-2xl shadow-xl transition duration-500 transform hover:-translate-y-1 border border-transparent hover:border-purple-400">
+                <div class="flex flex-col items-center">
+                    <img src="./sql.png" alt="MySQL Icon" class="h-14 w-14 mb-3 p-1 rounded-full bg-white/10 ring-2 ring-purple-400">
+                    <span class="text-xl font-extrabold text-purple-300 mb-2">MySQL</span>
+                    <p class="text-sm text-slate-200 text-center leading-tight">
+                        I know relational database design and write effective SQL queries for data management.
+                    </p>
+                </div>
             </div>
 
-            <div class="bg-[#3A3A40] p-6 rounded-xl shadow-xl transition duration-300 card-hover border border-white text-center shadow-lg transition-transform duration-300 hover:scale-[1.01]">
-                <img src="./xd.png" alt="CSS Icon" class="h-16 w-16 mx-auto mb-3 p-2 rounded-lg border border-purple-300">
-                <span class="text-xl font-bold text-slate-100">Adobe XD</span>
-            </div>
-
-            <div class="bg-[#3A3A40] p-6 rounded-xl shadow-xl transition duration-300 card-hover border border-white text-center shadow-lg transition-transform duration-300 hover:scale-[1.01]">
-                <img src="./db.png" alt="CSS Icon" class="h-16 w-16 mx-auto mb-3 p-2 rounded-lg border border-purple-300">
-                <span class="text-xl font-bold text-slate-100">Mongo DB</span>
-            </div>
-
-            <div class="bg-[#3A3A40] p-6 rounded-xl shadow-xl transition duration-300 card-hover border border-white text-center shadow-lg transition-transform duration-300 hover:scale-[1.01]">
-                <img src="./sql.png" alt="CSS Icon" class="h-16 w-16 mx-auto mb-3 p-2 rounded-lg border border-purple-300">
-                <span class="text-xl font-bold text-slate-100">MySQL</span>
-            </div>
-
-            <div class="bg-[#3A3A40] p-6 rounded-xl shadow-xl transition duration-300 card-hover border border-white text-center shadow-lg transition-transform duration-300 hover:scale-[1.01]">
-                <img src="./post.png" alt="CSS Icon" class="h-16 w-16 mx-auto mb-3 p-2 rounded-lg border border-purple-300">
-                <span class="text-xl font-bold text-slate-100">PostgreSQL</span>
+            <!-- PostgreSQL -->
+            <div class="bg-[#3A3A40] p-6 rounded-2xl shadow-xl transition duration-500 transform hover:-translate-y-1 border border-transparent hover:border-purple-400">
+                <div class="flex flex-col items-center">
+                    <img src="./post.png" alt="PostgreSQL Icon" class="h-14 w-14 mb-3 p-1 rounded-full bg-white/10 ring-2 ring-purple-400">
+                    <span class="text-xl font-extrabold text-purple-300 mb-2">PostgreSQL</span>
+                    <p class="text-sm text-slate-200 text-center leading-tight">
+                        Experienced with advanced SQL features for building secure backends with strong data integrity.
+                    </p>
+                </div>
             </div>
         </div>
     </div>
@@ -334,7 +406,7 @@
 
                 <div class="bg-[#3A3A40] text-[#B5B5B5] p-6 rounded-xl shadow-xl transition duration-300 card-hover border border-slate-700 flex flex-col justify-between shadow-lg transition-transform duration-300 hover:scale-[1.01]">
                     <div class="font-bold text-xl text-slate-100 mb-6 flex gap-2 items-center">
-                        <i class="bi bi-award-fill pb-6 text-yellow-300"></i> Full Stack Development (MERN), LiveWire
+                        <i class="bi bi-award-fill pb-6 text-yellow-300"></i> Full Stack Development (MERN)
                     </div>
                     <p class="text-sm text-slate-400 mb-4">Issued by LiveWire</p>
                     <a href="./mern.jpg" target="_blank">
@@ -348,7 +420,7 @@
                     <div class="font-bold text-xl text-slate-100 mb-6 flex gap-2 items-center">
                         <i class="bi bi-award-fill text-yellow-300"></i> Python for Data Science
                     </div>
-                    <p class="text-sm text-slate-400 pt-2">Issued by Infosys</p>
+                    <p class="text-sm text-slate-400 pb-4">Issued by Infosys</p>
                     <a href="./Infosys python for data science .jpg" target="_blank">
                         <button class="cursor-pointer w-full bg-blue-600 text-white font-bold py-2 px-4 rounded hover:bg-blue-700 transition flex gap-2 items-center justify-center">
                             <i class="bi bi-eye"></i> View Certificate
@@ -374,10 +446,10 @@
                 <hr class="border-1 border-black w-16 text-center">
             </div>
 
-            <div class="grid md:grid-cols-2 gap-6 my-6">
+            <div class="grid md:grid-cols-1 xl:grid-cols-2 lg:grid-cols-2 gap-6 my-6">
                 <div class="bg-[#3A3A40] text-[#B5B5B5] p-6 rounded-xl shadow-xl transition duration-300 card-hover border border-slate-700 flex flex-col justify-between shadow-lg transition-transform duration-300 hover:scale-[1.01]">
-                    <div class="font-bold text-xl text-slate-100 mb-6 flex items-center">
-                        <i data-lucide="cpu" class="mr-2 text-teal-400"></i> Role of Rust in Blockchain Development
+                    <div class="font-bold text-xl text-slate-100 mb-6 flex gap-2 items-center">
+                        <i class="bi bi-shield-check text-yellow-300"></i> Role of Rust in Blockchain Development
                     </div>
                     <p class="text-sm text-slate-400 mb-4 pl-2">Conducted at SRM Institute of Science and Technology.</p>
                     <a href="./workshop.jpg" target="_blank" class="pl-2">
@@ -388,8 +460,8 @@
                 </div>
 
                 <div class="bg-[#3A3A40] text-[#B5B5B5] p-6 rounded-xl shadow-xl transition duration-300 card-hover border border-slate-700 flex flex-col justify-between shadow-lg transition-transform duration-300 hover:scale-[1.01]">
-                    <div class="font-bold text-xl text-slate-100 mb-6 flex items-center">
-                        <i data-lucide="bar-chart-3" class="mr-2 text-teal-400"></i> Data Science Workshop
+                    <div class="font-bold text-xl text-slate-100 mb-6 flex gap-2 items-center">
+                        <i class="bi bi-bar-chart text-yellow-300"></i> Data Science Workshop
                     </div>
                     <p class="text-sm text-slate-400 mb-4 pl-2">Conducted by Livewire.</p>
                     <a href="./data.jpg" target="_blank" class="pl-2">
@@ -456,13 +528,69 @@
 
 
 
+<script>
+    // --- JavaScript for Interactivity ---
+
+    const navLinks = document.querySelectorAll('.nav-link');
+    const mobileMenuButton = document.getElementById('mobile-menu-button');
+    const mobileMenu = document.getElementById('mobile-menu');
+
+    // 1. Mobile Menu Toggle Logic
+    mobileMenuButton.addEventListener('click', () => {
+        const isExpanded = mobileMenuButton.getAttribute('aria-expanded') === 'true' || false;
+        mobileMenuButton.setAttribute('aria-expanded', !isExpanded);
+        mobileMenu.classList.toggle('hidden');
+
+        // Toggle hamburger/close icons
+        const [openIcon, closeIcon] = mobileMenuButton.querySelectorAll('svg');
+        openIcon.classList.toggle('hidden');
+        closeIcon.classList.toggle('hidden');
+    });
+
+    // 2. Smooth Scrolling Logic
+    navLinks.forEach(link => {
+        link.addEventListener('click', function(e) {
+            // Close mobile menu if open
+            if (!mobileMenu.classList.contains('hidden')) {
+                mobileMenu.classList.add('hidden');
+                mobileMenuButton.setAttribute('aria-expanded', 'false');
+
+                // Reset mobile button icons
+                const [openIcon, closeIcon] = mobileMenuButton.querySelectorAll('svg');
+                openIcon.classList.remove('hidden');
+                closeIcon.classList.add('hidden');
+            }
+
+            const targetId = this.getAttribute('href').substring(1);
+            // Handle Home link (href="#") -> targetId will be empty string
+            const targetElement = targetId ? document.getElementById(targetId) : document.body;
+
+            if (targetElement) {
+                e.preventDefault();
+
+                let offsetPosition = 0;
+                if (targetId) {
+                    // Scrolls to the element, accounting for the fixed navigation bar height (80px)
+                    const offset = 80;
+                    const bodyRect = document.body.getBoundingClientRect().top;
+                    const elementRect = targetElement.getBoundingClientRect().top;
+                    const elementPosition = elementRect - bodyRect;
+                    offsetPosition = elementPosition - offset;
+                }
+
+                window.scrollTo({
+                    top: offsetPosition,
+                    behavior: "smooth"
+                });
+            }
+        });
+    });
+
+</script>
 
 
 </body>
 </html>
-
-
-
 
 
 

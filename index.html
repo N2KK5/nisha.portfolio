@@ -478,7 +478,7 @@
     <!--contact-->
 
 
-    <div id="contact">
+  <div id="contact">
         <section class="bg-[#B5B5B5] p-8 border-25 border-[#3A3A40] rounded">
             <div class="text-center py-5 flex flex-col justify-center items-center gap-2">
                 <p class="text-3xl tracking-wider font-bold text-center">
@@ -487,30 +487,58 @@
                 <hr class="border-1 border-black w-16 text-center">
             </div>
 
-            <div class="grid md:grid-cols-1 lg:grid-cols-1 xl:grid-cols-1 py-5">
-                <div class="rounded-full text-center bg-[#3A3A40] text-[#B5B5B5] p-4 my-2 text-lg">
-                    <p>
-                        <a href="mailto:nishatharun57@gmail.com">
-                            <i class="bi bi-envelope"></i> nishatharun57@gmail.com
-                        </a>
-                    </p>
-                    <p>
-                        <i class="bi bi-telephone text-end"></i> +91 7540092577
-                    </p>
-                    <div class="flex justify-center space-x-6 pt-2">
-                        <a href="https://github.com/N2KK5/" target="_blank" class="transition transform hover:scale-110">
+            <!-- Updated Contact Card Container -->
+            <div class="w-full max-w-lg mx-auto p-6 md:p-8">
+                <div class="grid md:grid-cols-1 lg:grid-cols-1 xl:grid-cols-1 gap-2 space-y-4">
+
+                    <!-- Email Block -->
+                    <div class="flex items-center space-x-4 p-4 bg-[#3A3A40] rounded-xl transition duration-300 hover:bg-violet-600 hover:shadow-lg hover:shadow-violet-800/50 group">
+                        <i class="bi bi-envelope text-xl text-violet-400 group-hover:text-white"></i>
+                        <p class="text-white text-lg font-medium truncate">
+                            <a href="mailto:nishatharun57@gmail.com" class="hover:underline">
+                                nishatharun57@gmail.com
+                            </a>
+                        </p>
+                    </div>
+
+                    <!-- Phone Block -->
+                    <div class="flex items-center space-x-4 p-4 bg-[#3A3A40] rounded-xl transition duration-300 hover:bg-violet-600 hover:shadow-lg hover:shadow-violet-800/50 group">
+                        <i class="bi bi-telephone text-xl text-violet-400 group-hover:text-white"></i>
+                        <p class="text-white text-lg font-medium">
+                            +91 7540092577
+                        </p>
+                    </div>
+
+                </div>
+
+                <!-- Separator -->
+                <hr class="my-6 border-black">
+
+                <!-- Social Links -->
+                <div class="text-center">
+                    <h3 class="text-xl font-semibold text-black mb-4">Find Me Online</h3>
+
+                    <div class="flex justify-center space-x-8">
+
+                        <!-- GitHub Link -->
+                        <a href="https://github.com/N2KK5/" target="_blank"
+                           aria-label="GitHub Profile"
+                           class="p-3 text-4xl text-black transition transform duration-300 hover:scale-125 hover:text-white hover:bg-gray-900 rounded-full">
                             <i class="bi bi-github"></i>
                         </a>
-                        <!-- Assuming you have a LinkedIn profile -->
-                        <a href="https://www.linkedin.com/in/nisha-v-0a92892ba" target="_blank" class="transition transform hover:scale-110">
+
+                        <!-- LinkedIn Link -->
+                        <a href="https://www.linkedin.com/in/nisha-v-0a92892ba" target="_blank"
+                           aria-label="LinkedIn Profile"
+                           class="p-3 text-4xl text-black transition transform duration-300 hover:scale-125 hover:text-blue-400 hover:bg-gray-900 rounded-full">
                             <i class="bi bi-linkedin"></i>
                         </a>
                     </div>
                 </div>
+
             </div>
         </section>
     </div>
-
 
 
 
@@ -591,6 +619,7 @@
 
 </body>
 </html>
+
 
 
 

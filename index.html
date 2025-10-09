@@ -578,12 +578,44 @@
             }
         });
     });
+
+     // --- New JavaScript for Scroll Reveal Animations (Intersection Observer) ---
+    const animateOnScroll = (entries, observer) => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                const target = entry.target;
+                // Add the base animate__animated class and the specific animation class
+                const animationClass = target.dataset.animation;
+                target.classList.add('animate__animated', animationClass);
+
+                // Stop observing once the element has entered the viewport and animated
+                observer.unobserve(target);
+            }
+        });
+    };
+
+    // Initialize the Intersection Observer
+    // The threshold of 0.1 means the animation will trigger when 10% of the element is visible
+    const observer = new IntersectionObserver(animateOnScroll, {
+        root: null,
+        rootMargin: '0px',
+        threshold: 0.1
+    });
+
+    // Select all elements marked for scroll-based animation
+    const sectionsToAnimate = document.querySelectorAll('.animate-on-scroll');
+
+    // Start observing each section
+    sectionsToAnimate.forEach(section => {
+        observer.observe(section);
+    });
 </script>
 
 
 
 </body>
 </html>
+
 
 
 

@@ -75,28 +75,45 @@
     <!--Home-->
 
 
-    <div id="home">
-        <section>
-            <div class="grid md:grid-cols-1 lg:grid-cols-2 xl:grid-cols-2 gap-2">
-                <div class="mx-26 my-25 rounded-full">
-                    <img src="./wp_myimg2.jpg" alt="img" height="400" width="400" class="rounded-full">
+    <div id="home" class="min-h-screen flex items-center justify-center py-16 px-4 sm:px-6 lg:px-8">
+        <section class="container mx-auto">
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-10 lg:gap-20 items-center">
+    
+                <!-- Image Block: Centered on all screen sizes -->
+                <div class="flex justify-center order-1 lg:order-1">
+                    <img
+                            src="./img.jpg"
+                            alt="Profile Image Placeholder"
+                            class="rounded-full object-cover border-4 border-black shadow-2xl transition-transform duration-500 hover:scale-105
+                               w-60 h-60 sm:w-72 sm:h-72 lg:w-96 lg:h-96"
+                    >
                 </div>
-                <div class="mx-25 md:pt-60">
-                    <p class="text-white font-bold text-6xl">Hi, I'm Nisha</p>
-                    <br>
-
-                    <a href=".\Nisha_Resume.pdf">
-                        <button class="bg-[#B5B5B5] text-black font-bold rounded-lg shadow-lg transition duration-300 transform hover:-translate-y-1 py-2 px-4 hover:bg-purple-200 hover:text-black">
-                            <p class="flex items-center justify-center gap-2 text-lg">
-                                <i class="bi bi-cloud-arrow-down-fill text-xl"></i>
-                                Download Resume
-                            </p>
-                        </button>
-                    </a>
+    
+                <!-- Text & Button Block: Order changes on mobile to place text second if desired, but here we keep it simple -->
+                <div class="text-center lg:text-left order-2 lg:order-2 p-4">
+                    <p class="text-white font-extrabold
+                              text-4xl sm:text-5xl lg:text-6xl mb-6">
+                        Hi, I'm <span class="text-purple-300">Nisha</span>
+                    </p>
+                    <div class="mt-8">
+                        <!-- Updated button styling for better accessibility and hover effect -->
+                        <a href="./Nisha_Resume.pdf" download="Nisha_Resume.pdf">
+                            <button class="bg-gray-200 text-gray-900 font-bold rounded-lg transition duration-300 shadow-xl
+                                           hover:bg-purple-300 hover:text-black py-3 px-6
+                                           transform hover:-translate-y-1 active:translate-y-0.5">
+                                <p class="flex items-center justify-center gap-2 text-lg">
+                                    <i class="bi bi-cloud-arrow-down-fill text-xl"></i>
+                                    Download Resume
+                                </p>
+                            </button>
+                        </a>
+                    </div>
                 </div>
+    
             </div>
         </section>
     </div>
+
 
 
 
@@ -567,6 +584,7 @@
 
 </body>
 </html>
+
 
 
 

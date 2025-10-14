@@ -1,26 +1,27 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="scroll-smooth">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>NISHA PORTFOLIO</title>
-    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="/node_modules/bootstrap-icons/font/bootstrap-icons.css">
+    <!-- Load Tailwind CSS using the latest CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <!-- Removed external style.css and node_modules link for single file mandate -->
 </head>
 <body>
 
-<section class="bg-[#3A3A40]">
+<!-- Main container for the professional dark mode theme: Slate 900 -->
+<section class="bg-slate-900 min-h-screen">
 
     <!-- Navigation Bar (Fully Responsive) -->
-    <nav class="fixed top-0 z-50 w-full bg-[#B5B5B5] backdrop-blur-sm shadow-lg">
+    <nav class="fixed top-0 z-50 w-full bg-slate-900/90 backdrop-blur-md shadow-xl border-b border-sky-400/20">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="flex items-center justify-between h-16">
                 <!-- Brand/Name -->
                 <div class="flex items-center animate__animated animate__fadeInDown">
-                    <a href="#" class="text-4xl font-bold italic font-serif">
+                    <a href="#" class="text-3xl font-extrabold italic font-sans text-sky-400 tracking-wider">
                         NISHA
                     </a>
                 </div>
@@ -28,20 +29,20 @@
                 <!-- Desktop Links -->
                 <div class="hidden md:block animate__animated animate__fadeInDown">
                     <div class="ml-10 flex items-baseline space-x-4">
-                        <a href="#home" class="nav-link text-black px-3 py-2 text-lg rounded-md hover:border-b-2 border-[#3A3A40] font-bold p-2">Home</a>
-                        <a href="#about" class="nav-link text-black px-3 py-2 text-lg rounded-md hover:border-b-2 border-[#3A3A40] font-bold p-2">About</a>
-                        <a href="#projects" class="nav-link text-black px-3 py-2 text-lg rounded-md hover:border-b-2 border-[#3A3A40] font-bold p-2">Projects</a>
-                        <a href="#internship" class="nav-link text-black px-3 py-2 text-lg rounded-md hover:border-b-2 border-[#3A3A40] font-bold p-2">Internship</a>
-                        <a href="#skills" class="nav-link text-black px-3 py-2 text-lg rounded-md hover:border-b-2 border-[#3A3A40] font-bold p-2">Skills</a>
-                        <a href="#workshops" class="nav-link text-black px-3 py-2 text-lg rounded-md hover:border-b-2 border-[#3A3A40] font-bold p-2">Workshops</a>
-                        <a href="#certificates" class="nav-link text-black px-3 py-2 text-lg rounded-md hover:border-b-2 border-[#3A3A40] font-bold p-2">Certifications</a>
-                        <a href="#contact" class="nav-link text-black px-3 py-2 text-lg hover:border-b-2 border-[#3A3A40] font-bold p-2">Contact</a>
+                        <a href="#home" class="nav-link text-slate-200 px-3 py-2 text-lg rounded-md hover:border-b-2 border-sky-400 font-semibold p-2 transition duration-200 hover:text-sky-400">Home</a>
+                        <a href="#about" class="nav-link text-slate-200 px-3 py-2 text-lg rounded-md hover:border-b-2 border-sky-400 font-semibold p-2 transition duration-200 hover:text-sky-400">About</a>
+                        <a href="#projects" class="nav-link text-slate-200 px-3 py-2 text-lg rounded-md hover:border-b-2 border-sky-400 font-semibold p-2 transition duration-200 hover:text-sky-400">Projects</a>
+                        <a href="#internship" class="nav-link text-slate-200 px-3 py-2 text-lg rounded-md hover:border-b-2 border-sky-400 font-semibold p-2 transition duration-200 hover:text-sky-400">Internship</a>
+                        <a href="#skills" class="nav-link text-slate-200 px-3 py-2 text-lg rounded-md hover:border-b-2 border-sky-400 font-semibold p-2 transition duration-200 hover:text-sky-400">Skills</a>
+                        <a href="#workshops" class="nav-link text-slate-200 px-3 py-2 text-lg rounded-md hover:border-b-2 border-sky-400 font-semibold p-2 transition duration-200 hover:text-sky-400">Workshops</a>
+                        <a href="#certificates" class="nav-link text-slate-200 px-3 py-2 text-lg rounded-md hover:border-b-2 border-sky-400 font-semibold p-2 transition duration-200 hover:text-sky-400">Certifications</a>
+                        <a href="#contact" class="nav-link text-slate-200 px-3 py-2 text-lg hover:border-b-2 border-sky-400 font-semibold p-2 transition duration-200 hover:text-sky-400">Contact</a>
                     </div>
                 </div>
 
                 <!-- Mobile Menu Button -->
                 <div class="-mr-2 flex md:hidden">
-                    <button id="mobile-menu-button" type="button" class="inline-flex items-center justify-center p-2 rounded-md text- hover:text-white hover:bg-[#3A3A40] focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-neutral-400 focus:ring-neutral-600" aria-controls="mobile-menu" aria-expanded="false">
+                    <button id="mobile-menu-button" type="button" class="inline-flex items-center justify-center p-2 rounded-md text-slate-100 hover:text-white hover:bg-sky-400/20 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-slate-900 focus:ring-sky-400" aria-controls="mobile-menu" aria-expanded="false">
                         <span class="sr-only">Open main menu</span>
                         <!-- Hamburger Icon -->
                         <svg class="block h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
@@ -57,49 +58,48 @@
         </div>
 
         <!-- Mobile Menu Links -->
-        <div class="md:hidden hidden" id="mobile-menu">
+        <div class="md:hidden hidden bg-slate-900/90" id="mobile-menu">
             <div class="px-2 pt-2 pb-3 space-y-1 sm:px-3">
-                <a href="#home" class="nav-link block px-3 py-2 rounded-md text-base font-medium text-white bg-[#3A3A40]" aria-current="page">Home</a>
-                <a href="#about" class="nav-link block px-3 py-2 rounded-md text-base font-medium text-[#3A3A40] hover:bg-[#3A3A40] hover:text-white">About</a>
-                <a href="#projects" class="nav-link block px-3 py-2 rounded-md text-base font-medium text-[#3A3A40] hover:bg-[#3A3A40] hover:text-white">Projects</a>
-                <a href="#internship" class="nav-link block px-3 py-2 rounded-md text-base font-medium text-[#3A3A40] hover:bg-[#3A3A40] hover:text-white">Internship</a>
-                <a href="#skills" class="nav-link block px-3 py-2 rounded-md text-base font-medium text-[#3A3A40] hover:bg-[#3A3A40] hover:text-white">Skills</a>
-                <a href="#certificates" class="nav-link block px-3 py-2 rounded-md text-base font-medium text-[#3A3A40] hover:bg-[#3A3A40] hover:text-white">Certificates</a>
-                <a href="#workshops" class="nav-link block px-3 py-2 rounded-md text-base font-medium text-[#3A3A40] hover:bg-[#3A3A40] hover:text-white">Workshops</a>
-                <a href="#contact" class="nav-link block px-3 py-2 rounded-md text-base font-medium text-[#3A3A40] hover:bg-[#3A3A40] hover:text-white">Contact</a>
+                <a href="#home" class="nav-link block px-3 py-2 rounded-md text-sky-400 bg-sky-400/10 font-medium transition duration-200" aria-current="page">Home</a>
+                <a href="#about" class="nav-link block px-3 py-2 rounded-md text-slate-200 hover:bg-sky-400/20 hover:text-sky-400 font-medium transition duration-200">About</a>
+                <a href="#projects" class="nav-link block px-3 py-2 rounded-md text-slate-200 hover:bg-sky-400/20 hover:text-sky-400 font-medium transition duration-200">Projects</a>
+                <a href="#internship" class="nav-link block px-3 py-2 rounded-md text-slate-200 hover:bg-sky-400/20 hover:text-sky-400 font-medium transition duration-200">Internship</a>
+                <a href="#skills" class="nav-link block px-3 py-2 rounded-md text-slate-200 hover:bg-sky-400/20 hover:text-sky-400 font-medium transition duration-200">Skills</a>
+                <a href="#certificates" class="nav-link block px-3 py-2 rounded-md text-slate-200 hover:bg-sky-400/20 hover:text-sky-400 font-medium transition duration-200">Certifications</a>
+                <a href="#workshops" class="nav-link block px-3 py-2 rounded-md text-slate-200 hover:bg-sky-400/20 hover:text-sky-400 font-medium transition duration-200">Workshops</a>
+                <a href="#contact" class="nav-link block px-3 py-2 rounded-md text-slate-200 hover:bg-sky-400/20 hover:text-sky-400 font-medium transition duration-200">Contact</a>
             </div>
         </div>
     </nav>
 
 
-    <!--Home-->
-
-
+    <!-- Home Section -->
     <div id="home" class="min-h-screen flex items-center justify-center py-16 px-4 sm:px-6 lg:px-8">
-        <section class="container mx-auto">
+        <section class="container mx-auto pt-16">
             <div class="grid grid-cols-1 lg:grid-cols-2 gap-10 lg:gap-20 items-center">
-    
+
                 <!-- Image Block: Centered on all screen sizes -->
                 <div class="flex justify-center order-1 lg:order-1 animate__animated animate__zoomIn animate__delay-0_5s">
                     <img
-                            src="./img.jpg"
+                            src="../assets/img.jpg"
                             alt="Profile Image Placeholder"
-                            class="rounded-full object-cover border-4 border-black shadow-2xl transition-transform duration-500 hover:scale-105
+                            class="rounded-full object-cover border-4 border-sky-600 shadow-2xl transition-transform duration-500 hover:scale-105
                                w-60 h-60 sm:w-72 sm:h-72 lg:w-96 lg:h-96"
+                            onerror="this.onerror=null;this.src='https://placehold.co/384x384/0F172A/38BDF8?text=Nisha'"
                     >
                 </div>
-    
-                <!-- Text & Button Block: Order changes on mobile to place text second if desired, but here we keep it simple -->
+
+                <!-- Text & Button Block -->
                 <div class="text-center lg:text-left order-2 lg:order-2 p-4">
-                    <p class="text-white font-extrabold
+                    <p class="text-slate-100 font-extrabold
                               text-4xl sm:text-5xl lg:text-6xl mb-6 animate__animated animate__fadeInLeft">
-                        Hi, I'm <span class="text-purple-300">Nisha</span>
+                        Hi, I'm <span class="text-sky-400">Nisha</span>
                     </p>
                     <div class="mt-8 animate__animated animate__fadeInUp animate__delay-1s">
-                        <!-- Updated button styling for better accessibility and hover effect -->
+                        <!-- Professional Button Styling -->
                         <a href="./Nisha_Resume.pdf" download="Nisha_Resume.pdf">
-                            <button class="bg-gray-200 text-gray-900 font-bold rounded-lg transition duration-300 shadow-xl
-                                           hover:bg-purple-300 hover:text-black py-3 px-6
+                            <button class="bg-sky-400 text-slate-900 font-bold rounded-lg transition duration-300 shadow-xl
+                                           hover:bg-sky-300 hover:text-slate-900 py-3 px-6
                                            transform hover:-translate-y-1 active:translate-y-0.5">
                                 <p class="flex items-center justify-center gap-2 text-lg">
                                     <i class="bi bi-cloud-arrow-down-fill text-xl"></i>
@@ -109,297 +109,297 @@
                         </a>
                     </div>
                 </div>
-    
+
             </div>
         </section>
     </div>
-
 
 
 
     <!-- About Section -->
-    <div id="about">
-        <section class="bg-[#B5B5B5] p-8 border-25 border-[#3A3A40] rounded my-16 animate-on-scroll" data-animation="animate__fadeInLeft">
+    <div id="about" class="px-4 sm:px-6 lg:px-8">
+        <!-- Section background changed to Slate 800 for depth -->
+        <section class="bg-slate-800 p-8 rounded-xl my-16 shadow-2xl animate-on-scroll" data-animation="animate__fadeInLeft">
             <div class="text-center py-4 flex flex-col justify-center items-center gap-2">
-                <p class="text-3xl tracking-wider font-bold text-center">
+                <p class="text-3xl tracking-wider font-bold text-center text-white">
                     ABOUT ME
                 </p>
-                <hr class="border-1 border-black w-16 text-center">
-            </div>            
-            <div class="grid md:grid-cols-1 lg:grid-cols-2 xl:grid-cols-2 gap-18 py-8">
-                <div class="border-2 border-[--color-primary] rounded-xl p-6 shadow-lg transition-transform duration-300 hover:scale-[1.01]">
-                <p class="my-4 text-black font-bold text-xl tracking-wider xl:py-4 lg:py-4">
-                    Hi — I’m Nisha, a recent BSc Computer Science graduate passionate about building user-friendly
-                    web applications. I enjoy solving problems with code, learning new technologies, and collaborating
-                    with teams to create useful, accessible products. I’m currently looking for opportunities where I can contribute,
-                    learn, and grow. </p> </div> <div class="py-2">
-                <div>
-
-                <div class="border-2 border-[--color-primary] rounded-xl p-6 shadow-lg transition-transform duration-300 hover:scale-[1.01]">
-                    <h3 class="text-2xl font-bold my-4 flex items-center">
-                        <i class="bi bi-mortarboard-fill mr-3"></i> EDUCATION
-                    </h3>
-                    <p class="text-xl font-bold mb-4">Bsc Computer Science <br> <span class="text-base">SSKV College of Arts & Science for Women</span>
-                    </p>
-                    <div class="grid md:grid-cols-1 lg:grid-cols-2 xl:grid-cols-2 gap-2 text-lg">
-                        <div>
-                            <span class="mr-3 mt-1">&#10003;</span><span class="font-bold">UI/UX Design:</span>
-                        </div>
-                        <div>
-                            Explored my creativity and design skills using tools like Figma/Adobe XD.
-                        </div>
-                    </div>
-                    <div class="grid md:grid-cols-1 lg:grid-cols-2 xl:grid-cols-2 gap-2 text-lg">
-                        <div>
-                            <span class="mr-3 mt-1">&#10003;</span><span class="font-bold">Debugging in Python:</span>
-                        </div>
-                        <div>
-                            Identified and resolved syntax errors, logical errors, and runtime issues efficiently.
-                        </div>
-                    </div>
-                </div>
-                </div>
+                <!-- Accent line for focus -->
+                <hr class="border-1 border-sky-400 w-16 text-center">
             </div>
+            <div class="grid md:grid-cols-1 lg:grid-cols-2 xl:grid-cols-2 gap-10 py-8">
+                <!-- Profile Summary Card -->
+                <div class="border border-sky-400 rounded-xl p-6 shadow-xl transition-transform duration-300 hover:scale-[1.01] bg-slate-900/50 text-slate-200">
+                    <p class="my-4 text-xl tracking-wider xl:py-4 lg:py-4">
+                        Hi — I’m Nisha, a recent BSc Computer Science graduate passionate about building user-friendly
+                        web applications. I enjoy solving problems with code, learning new technologies, and collaborating
+                        with teams to create useful, accessible products. I’m currently looking for opportunities where I can contribute,
+                        learn, and grow. </p> </div>
+
+                <!-- Education Card -->
+                <div class="py-2">
+                    <div class="border border-sky-400 rounded-xl p-6 shadow-xl transition-transform duration-300 hover:scale-[1.01] bg-slate-900/50 text-slate-200">
+                        <h3 class="text-2xl font-bold my-4 flex items-center text-sky-400">
+                            <i class="bi bi-mortarboard-fill mr-3"></i> EDUCATION
+                        </h3>
+                        <p class="text-xl font-bold mb-4">Bsc Computer Science <br> <span class="text-base text-slate-400">SSKV College of Arts & Science for Women</span>
+                        </p>
+                        <div class="space-y-2 text-lg">
+                            <div class="flex">
+                                <span class="mr-3 mt-1 text-sky-400">&#10003;</span>
+                                <div>
+                                    <span class="font-bold text-slate-300">UI/UX Design:</span>
+                                    <span class="text-slate-400 block text-sm">Explored my creativity and design skills using tools like Figma/Adobe XD.</span>
+                                </div>
+                            </div>
+                            <div class="flex">
+                                <span class="mr-3 mt-1 text-sky-400">&#10003;</span>
+                                <div>
+                                    <span class="font-bold text-slate-300">Debugging in Python:</span>
+                                    <span class="text-slate-400 block text-sm">Identified and resolved syntax errors, logical errors, and runtime issues efficiently.</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
         </section>
     </div>
 
 
-    <!--Projects-->
-
-    <section id="projects">
-        <div class="bg-[#B5B5B5] p-8 border-25 border-[#3A3A40] rounded animate-on-scroll" data-animation="animate__fadeInRight">
+    <!-- Projects Section -->
+    <section id="projects" class="px-4 sm:px-6 lg:px-8">
+        <div class="bg-slate-800 p-8 rounded-xl shadow-2xl animate-on-scroll" data-animation="animate__fadeInRight">
             <div class="text-center py-4 flex flex-col justify-center items-center gap-2">
-                <p class="text-3xl tracking-wider font-bold text-center">
+                <p class="text-3xl tracking-wider font-bold text-center text-white">
                     PROJECTS
                 </p>
-                <hr class="border-1 border-black w-16 text-center">
+                <hr class="border-1 border-sky-400 w-16 text-center">
             </div>
 
-            <div class="grid md:grid-cols-1 lg-grid-cols-1 xl:grid-cols-1">
-                <div class="border-2 border-[--color-primary] rounded-xl p-6 shadow-lg transition-transform duration-300 hover:scale-[1.01]">
-                    <h3 class="font-bold text-2xl mb-4">
+            <div class="grid lg:grid-cols-2 gap-8 my-8">
+                <!-- Project 1: Grocery Website -->
+                <div class="border border-sky-400 rounded-xl p-6 shadow-xl transition-transform duration-300 hover:scale-[1.01] bg-slate-900/50 text-slate-200">
+                    <h3 class="font-bold text-2xl mb-4 text-sky-400">
                         <i class="bi bi-cart4 mr-2"></i> <span class="underline">Grocery Website</span>
                     </h3>
-                    <p class="text-lg">
-                        <span class="font-bold block">Description:</span> The project created an online platform for customers to browse and purchase groceries, featuring product catalogs and a secure checkout.<br>
-                        <span class="font-bold block">Frontend Technology:</span> HTML, CSS, JavaScript, Tailwind CSS, and Bootstrap.<br>
-                        <span class="font-bold block">Backend Technology & Database:</span> Node.js, Express, and MongoDB.<br>
-                        <span class="font-bold block">Key Features:</span> User registration/login, responsive product display, shopping cart, and product review/rating system.
+                    <p class="text-lg space-y-2">
+                        <span class="font-bold block text-slate-300">Description:</span> <span class="text-slate-400">The project created an online platform for customers to browse and purchase groceries, featuring product catalogs and a secure checkout.</span>
+                        <span class="font-bold block text-slate-300">Frontend Technology:</span> <span class="text-slate-400">HTML, CSS, JavaScript, Tailwind CSS, and Bootstrap.</span>
+                        <span class="font-bold block text-slate-300">Backend Technology & Database:</span> <span class="text-slate-400">Node.js, Express, and MongoDB.</span>
+                        <span class="font-bold block text-slate-300">Key Features:</span> <span class="text-slate-400">User registration/login, responsive product display, shopping cart, and product review/rating system.</span>
                     </p>
                     <a href="https://github.com/N2KK5/Grocery_Website" target="_blank" class="inline-block mt-6">
-                        <button class="cursor-pointer bg-black text-white px-6 py-2 text-xl rounded-lg hover:bg-[#1D3E4C] hover:text-white transition duration-300">
+                        <button class="cursor-pointer bg-sky-400 text-slate-900 px-6 py-2 text-xl rounded-lg hover:bg-sky-300 transition duration-300 font-semibold shadow-md">
                             <i class="bi bi-github mr-2"></i> View Project
                         </button>
                     </a>
                 </div>
-                <br>
-                <div class="border-2 border-[--color-primary] rounded-xl p-6 shadow-lg transition-transform duration-300 hover:scale-[1.01]">
-                <h3 class="font-bold text-2xl text-[--color-primary] mb-4">
-                    <i class="bi bi-book-half mr-2"></i> <span class="underline">Cook Book Website</span>
-                </h3>
-                <p class="text-lg">
-                    <span class="font-bold block">Description:</span> Developed a recipe website where users can discover, save, and share recipes with a clean, easy-to-use interface and robust search functionality.<br>
-                    <span class="font-bold block">Frontend Technology:</span> HTML, CSS, React, JavaScript, Tailwind CSS, and Bootstrap.<br>
-                    <span class="font-bold block">Key Features:</span> User authentication, high-quality images of cooking steps, and responsive design for all devices.<br>
-                    <span class="font-bold block">Impact:</span> Increased user engagement through personalized recipe recommendations and intuitive navigation.
+
+                <!-- Project 2: Cook Book Website -->
+                <div class="border border-sky-400 rounded-xl p-6 shadow-xl transition-transform duration-300 hover:scale-[1.01] bg-slate-900/50 text-slate-200">
+                    <h3 class="font-bold text-2xl mb-4 text-sky-400">
+                        <i class="bi bi-book-half mr-2"></i> <span class="underline">Cook Book Website</span>
+                    </h3>
+                    <p class="text-lg space-y-2">
+                        <span class="font-bold block text-slate-300">Description:</span> <span class="text-slate-400">Developed a recipe website where users can discover, save, and share recipes with a clean, easy-to-use interface and robust search functionality.</span>
+                        <span class="font-bold block text-slate-300">Frontend Technology:</span> <span class="text-slate-400">HTML, CSS, React, JavaScript, Tailwind CSS, and Bootstrap.</span>
+                        <span class="font-bold block text-slate-300">Key Features:</span> <span class="text-slate-400">User authentication, high-quality images of cooking steps, and responsive design for all devices.</span>
+                        <span class="font-bold block text-slate-300">Impact:</span> <span class="text-slate-400">Increased user engagement through personalized recipe recommendations and intuitive navigation.</span>
+                    </p>
+                    <a href="https://github.com/N2KK5/Cook_Book" target="_blank" class="inline-block mt-6">
+                        <button class="cursor-pointer bg-sky-400 text-slate-900 px-6 py-2 text-xl rounded-lg hover:bg-sky-300 transition duration-300 font-semibold shadow-md">
+                            <i class="bi bi-github mr-2"></i> View Project
+                        </button>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Internship Section -->
+    <section id="internship" class="px-4 sm:px-6 lg:px-8">
+        <div class="bg-slate-800 p-8 rounded-xl my-16 shadow-2xl animate-on-scroll" data-animation="animate__fadeInUp">
+            <div class="text-center py-4 flex flex-col justify-center items-center gap-2">
+                <p class="text-3xl tracking-wider font-bold text-center text-white">
+                    INTERNSHIP
                 </p>
-                <a href="https://github.com/N2KK5/Cook_Book" target="_blank" class="inline-block mt-6">
-                    <button class="cursor-pointer bg-black text-white px-6 py-2 text-xl rounded-lg hover:bg-[#1D3E4C] hover:text-white transition duration-300">
-                        <i class="bi bi-github mr-2"></i> View Project
-                    </button>
-                </a>
+                <hr class="border-1 border-sky-400 w-16 text-center">
             </div>
+
+
+            <div class="border border-sky-400 rounded-xl p-6 shadow-xl transition-transform duration-300 hover:scale-[1.01] bg-slate-900/50 text-slate-200">
+                <p class="text-xl font-bold text-white mb-4">
+                    Role: <span class="text-sky-400">Tech Associate Intern</span> <br>
+                    <span class="text-slate-400 text-lg">Pixel In, LP</span>
+                </p>
+
+                <!-- Responsibilities List -->
+                <h3 class="text-xl font-semibold mb-4 text-slate-300">Key Responsibilities & Achievements:</h3>
+                <ul class="space-y-4 list-none p-0">
+                    <!-- Item 1: UI Implementation -->
+                    <li class="flex items-start">
+                        <i class="bi bi-code-slash text-xl mr-2 text-sky-400"></i>
+                        <p class="text-lg text-slate-400">
+                            Designed and implemented user interface components using **React**, **Tailwind CSS**, and **JavaScript**.
+                        </p>
+                    </li>
+
+                    <!-- Item 2: Software Development & Testing -->
+                    <li class="flex items-start">
+                        <i class="bi bi-lightning-charge text-xl mr-2 text-sky-400"></i>
+                        <p class="text-lg text-slate-400">
+                            Assisted in developing and testing software applications, improving functionality and performance.
+                        </p>
+                    </li>
+
+                    <!-- Item 3: Troubleshooting & Documentation -->
+                    <li class="flex items-start">
+                        <i class="bi bi-journal-text text-xl mr-2 text-sky-400"></i>
+                        <p class="text-lg text-slate-400">
+                            Gained hands-on experience in **troubleshooting**, **debugging**, and technical **documentation**.
+                        </p>
+                    </li>
+                </ul>
             </div>
         </div>
     </section>
 
 
-    <!-- Internship -->
-    <section id="internship" class="bg-[#B5B5B5] p-8 border-25 border-[#3A3A40] rounded animate-on-scroll" data-animation="animate__fadeInUp">
-        <div class="text-center py-4 flex flex-col justify-center items-center gap-2">
-            <p class="text-3xl tracking-wider font-bold text-center">
-                INTERNSHIP
-            </p>
-            <hr class="border-1 border-black w-16 text-center">
-        </div>
-
-
-        <div class="border-2 border-[--color-primary] rounded-xl p-6 shadow-lg transition-transform duration-300 hover:scale-[1.01]">
-            <p class="text-xl font-bold">
-                Role:  Tech Associate Intern <br>
-                Pixel In, LP
-            </p>
-
-            <!-- Responsibilities List -->
-            <h3 class="text-xl mb-4">Key Responsibilities & Achievements:</h3>
-            <ul class="space-y-4 list-none p-0">
-                <!-- Item 1: UI Implementation -->
-                <li class="flex items-start">
-                            <!-- Icon for development/coding -->
-                    <i class="bi bi-code-slash text-xl"></i>
-                    <p class="text-xl pl-2">
-                        Designed and implemented user interface components using React, Tailwindcss and Javascript.               
-                </li>
-
-                <!-- Item 2: Software Development & Testing -->
-                <li class="flex items-start">
-                        <i class="bi bi-lightning-charge text-xl"></i>
-                    <p class="text-xl pl-2">
-                        Assisted in developing and testing software applications, improving functionality and performance.
-                </li>
-
-                <!-- Item 3: Troubleshooting & Documentation -->
-                <li class="flex items-start">
-                      <i class="bi bi-journal-text text-xl"></i>
-                    <p class="text-xl pl-2">
-                        Gained hands-on experience in troubleshooting, debugging, and technical documentation.
-                    </p>
-                </li>
-            </ul>
-        </div>
-    </section>
-
-
-
-
-
-    <!--Skills-->
-
-    <div id="skills" class="bg-[#B5B5B5] p-8 border-25 border-[#3A3A40] rounded animate-on-scroll" data-animation="animate__zoomIn">
-        <div class="text-center py-4 flex flex-col justify-center items-center gap-2">
-            <p class="text-3xl tracking-wider font-bold text-center">
-                SKILLS
-            </p>
-            <hr class="border-1 border-black w-16 text-center">
-        </div>
-
-
-        <!-- Improved Grid Layout for Skills -->
-        <div class="grid md:grid-cols-2 lg:grid-cols-4 xl:grid-cols-3 gap-6 my-6">
-
-            <!-- HTML -->
-            <div class="bg-[#3A3A40] p-6 rounded-2xl shadow-xl transition duration-500 transform hover:-translate-y-1 border border-transparent hover:border-purple-400">
-                <div class="flex flex-col items-center">
-                    <img src="./html.png" alt="HTML Icon" class="h-14 w-14 mb-3 p-1 rounded-full bg-white/10 ring-2 ring-purple-400">
-                    <span class="text-xl font-extrabold text-purple-300 mb-2">HTML</span>
-                    <p class="text-sm text-slate-200 text-center leading-tight">
-                        Proficient in HTML5 to structure webpage content and ensure accessibility.
-                    </p>
-                </div>
+    <!-- Skills Section -->
+    <div id="skills" class="px-4 sm:px-6 lg:px-8">
+        <div class="bg-slate-800 p-8 rounded-xl my-16 shadow-2xl animate-on-scroll" data-animation="animate__zoomIn">
+            <div class="text-center py-4 flex flex-col justify-center items-center gap-2">
+                <p class="text-3xl tracking-wider font-bold text-center text-white">
+                    SKILLS
+                </p>
+                <hr class="border-1 border-sky-400 w-16 text-center">
             </div>
 
-            <!-- CSS -->
-            <div class="bg-[#3A3A40] p-6 rounded-2xl shadow-xl transition duration-500 transform hover:-translate-y-1 border border-transparent hover:border-purple-400">
-                <div class="flex flex-col items-center">
-                    <img src="./css.png" alt="CSS Icon" class="h-14 w-14 mb-3 p-1 rounded-full bg-white/10 ring-2 ring-purple-400">
-                    <span class="text-xl font-extrabold text-purple-300 mb-2">CSS</span>
-                    <p class="text-sm text-slate-200 text-center leading-tight">
-                        Skilled in using CSS, Flexbox, and Grid to style pages and create responsive layouts.
-                    </p>
-                </div>
-            </div>
 
-            <!-- React -->
-            <div class="bg-[#3A3A40] p-6 rounded-2xl shadow-xl transition duration-500 transform hover:-translate-y-1 border border-transparent hover:border-purple-400">
-                <div class="flex flex-col items-center">
-                    <img src="./physics.png" alt="React Icon" class="h-14 w-14 mb-3 p-1 rounded-full bg-white/10 ring-2 ring-purple-400">
-                    <span class="text-xl font-extrabold text-purple-300 mb-2">React</span>
-                    <p class="text-sm text-slate-200 text-center leading-tight">
-                        I build dynamic front-end apps using "React components" and Hooks for better performance.
-                    </p>
-                </div>
-            </div>
+            <!-- Grid Layout for Skills -->
+            <div class="grid md:grid-cols-2 lg:grid-cols-4 xl:grid-cols-3 gap-6 my-6">
 
-            <!-- JavaScript -->
-            <div class="bg-[#3A3A40] p-6 rounded-2xl shadow-xl transition duration-500 transform hover:-translate-y-1 border border-transparent hover:border-purple-400">
-                <div class="flex flex-col items-center">
-                    <img src="./java-script.png" alt="JavaScript Icon" class="h-14 w-14 mb-3 p-1 rounded-full bg-white/10 ring-2 ring-purple-400">
-                    <span class="text-xl font-extrabold text-purple-300 mb-2">JavaScript</span>
-                    <p class="text-sm text-slate-200 text-center leading-tight">
-                        Strong in ES6+ features to add logic and make web pages interactive.
-                    </p>
+                <!-- HTML (Repeated structure for other skills) -->
+                <div class="bg-slate-900 p-6 rounded-2xl shadow-xl transition duration-500 transform hover:-translate-y-1 border border-transparent hover:border-sky-400">
+                    <div class="flex flex-col items-center">
+                        <!-- Placeholder image URL used -->
+                        <img src="../assets/html.png" alt="HTML Icon" class="h-14 w-14 mb-3 p-1 rounded-full bg-white/10 ring-2 ring-sky-400">
+                        <span class="text-xl font-extrabold text-sky-400 mb-2">HTML</span>
+                        <p class="text-sm text-slate-400 text-center leading-tight">
+                            Proficient in HTML5 to structure webpage content and ensure accessibility.
+                        </p>
+                    </div>
                 </div>
-            </div>
 
-            <!-- Tailwind CSS -->
-            <div class="bg-[#3A3A40] p-6 rounded-2xl shadow-xl transition duration-500 transform hover:-translate-y-1 border border-transparent hover:border-purple-400">
-                <div class="flex flex-col items-center">
-                    <img src="./tailwindcss-mark.d52e9897.svg" alt="Tailwind CSS Icon" class="h-14 w-14 mb-3 p-1 rounded-full bg-white/10 ring-2 ring-purple-400">
-                    <span class="text-xl font-extrabold text-purple-300 mb-2">Tailwind CSS</span>
-                    <p class="text-sm text-slate-200 text-center leading-tight">
-                        Expert at using this utility framework to quickly build "responsive" and modern interfaces.
-                    </p>
+                <!-- CSS -->
+                <div class="bg-slate-900 p-6 rounded-2xl shadow-xl transition duration-500 transform hover:-translate-y-1 border border-transparent hover:border-sky-400">
+                    <div class="flex flex-col items-center">
+                        <img src="../assets/css.png" alt="CSS Icon" class="h-14 w-14 mb-3 p-1 rounded-full bg-white/10 ring-2 ring-sky-400">
+                        <span class="text-xl font-extrabold text-sky-400 mb-2">CSS</span>
+                        <p class="text-sm text-slate-400 text-center leading-tight">
+                            Skilled in using CSS, Flexbox, and Grid to style pages and create responsive layouts.
+                        </p>
+                    </div>
                 </div>
-            </div>
 
-            <!-- Figma -->
-            <div class="bg-[#3A3A40] p-6 rounded-2xl shadow-xl transition duration-500 transform hover:-translate-y-1 border border-transparent hover:border-purple-400">
-                <div class="flex flex-col items-center">
-                    <img src="./figma.png" alt="Figma Icon" class="h-14 w-14 mb-3 p-1 rounded-full bg-white/10 ring-2 ring-purple-400">
-                    <span class="text-xl font-extrabold text-purple-300 mb-2">Figma</span>
-                    <p class="text-sm text-slate-200 text-center leading-tight">
-                        Experienced in UI/UX design and creating high-fidelity prototypes and wireframes.
-                    </p>
+                <!-- React -->
+                <div class="bg-slate-900 p-6 rounded-2xl shadow-xl transition duration-500 transform hover:-translate-y-1 border border-transparent hover:border-sky-400">
+                    <div class="flex flex-col items-center">
+                        <img src="../assets/physics.png" alt="React Icon" class="h-14 w-14 mb-3 p-1 rounded-full bg-white/10 ring-2 ring-sky-400">
+                        <span class="text-xl font-extrabold text-sky-400 mb-2">React</span>
+                        <p class="text-sm text-slate-400 text-center leading-tight">
+                            I build dynamic front-end apps using "React components" and Hooks for better performance.
+                        </p>
+                    </div>
                 </div>
-            </div>
 
-            <!-- Adobe XD -->
-            <div class="bg-[#3A3A40] p-6 rounded-2xl shadow-xl transition duration-500 transform hover:-translate-y-1 border border-transparent hover:border-purple-400">
-                <div class="flex flex-col items-center">
-                    <img src="./xd.png" alt="Adobe XD Icon" class="h-14 w-14 mb-3 p-1 rounded-full bg-white/10 ring-2 ring-purple-400">
-                    <span class="text-xl font-extrabold text-purple-300 mb-2">Adobe XD</span>
-                    <p class="text-sm text-slate-200 text-center leading-tight">
-                        Used for collaborative design, creating interactive prototypes, and mapping user flows.
-                    </p>
+                <!-- JavaScript -->
+                <div class="bg-slate-900 p-6 rounded-2xl shadow-xl transition duration-500 transform hover:-translate-y-1 border border-transparent hover:border-sky-400">
+                    <div class="flex flex-col items-center">
+                        <img src="../assets/java-script.png" alt="JavaScript Icon" class="h-14 w-14 mb-3 p-1 rounded-full bg-white/10 ring-2 ring-sky-400">
+                        <span class="text-xl font-extrabold text-sky-400 mb-2">JavaScript</span>
+                        <p class="text-sm text-slate-400 text-center leading-tight">
+                            Strong in ES6+ features to add logic and make web pages interactive.
+                        </p>
+                    </div>
                 </div>
-            </div>
 
-            <!-- MySQL -->
-            <div class="bg-[#3A3A40] p-6 rounded-2xl shadow-xl transition duration-500 transform hover:-translate-y-1 border border-transparent hover:border-purple-400">
-                <div class="flex flex-col items-center">
-                    <img src="./sql.png" alt="MySQL Icon" class="h-14 w-14 mb-3 p-1 rounded-full bg-white/10 ring-2 ring-purple-400">
-                    <span class="text-xl font-extrabold text-purple-300 mb-2">MySQL</span>
-                    <p class="text-sm text-slate-200 text-center leading-tight">
-                        I know relational database design and write effective SQL queries for data management.
-                    </p>
+                <!-- Tailwind CSS -->
+                <div class="bg-slate-900 p-6 rounded-2xl shadow-xl transition duration-500 transform hover:-translate-y-1 border border-transparent hover:border-sky-400">
+                    <div class="flex flex-col items-center">
+                        <img src="../assets/tailwindcss-mark.d52e9897.svg" alt="Tailwind CSS Icon" class="h-14 w-14 mb-3 p-1 rounded-full bg-white/10 ring-2 ring-sky-400">
+                        <span class="text-xl font-extrabold text-sky-400 mb-2">Tailwind CSS</span>
+                        <p class="text-sm text-slate-400 text-center leading-tight">
+                            Expert at using this utility framework to quickly build "responsive" and modern interfaces.
+                        </p>
+                    </div>
                 </div>
-            </div>
 
-            <!-- PostgreSQL -->
-            <div class="bg-[#3A3A40] p-6 rounded-2xl shadow-xl transition duration-500 transform hover:-translate-y-1 border border-transparent hover:border-purple-400">
-                <div class="flex flex-col items-center">
-                    <img src="./post.png" alt="PostgreSQL Icon" class="h-14 w-14 mb-3 p-1 rounded-full bg-white/10 ring-2 ring-purple-400">
-                    <span class="text-xl font-extrabold text-purple-300 mb-2">PostgreSQL</span>
-                    <p class="text-sm text-slate-200 text-center leading-tight">
-                        Experienced with advanced SQL features for building secure backends with strong data integrity.
-                    </p>
+                <!-- Figma -->
+                <div class="bg-slate-900 p-6 rounded-2xl shadow-xl transition duration-500 transform hover:-translate-y-1 border border-transparent hover:border-sky-400">
+                    <div class="flex flex-col items-center">
+                        <img src="../assets/figma.png" alt="Figma Icon" class="h-14 w-14 mb-3 p-1 rounded-full bg-white/10 ring-2 ring-sky-400">
+                        <span class="text-xl font-extrabold text-sky-400 mb-2">Figma</span>
+                        <p class="text-sm text-slate-400 text-center leading-tight">
+                            Experienced in UI/UX design and creating high-fidelity prototypes and wireframes.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Adobe XD -->
+                <div class="bg-slate-900 p-6 rounded-2xl shadow-xl transition duration-500 transform hover:-translate-y-1 border border-transparent hover:border-sky-400">
+                    <div class="flex flex-col items-center">
+                        <img src="../assets/xd.png" alt="Adobe XD Icon" class="h-14 w-14 mb-3 p-1 rounded-full bg-white/10 ring-2 ring-sky-400">
+                        <span class="text-xl font-extrabold text-sky-400 mb-2">Adobe XD</span>
+                        <p class="text-sm text-slate-400 text-center leading-tight">
+                            Used for collaborative design, creating interactive prototypes, and mapping user flows.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- MySQL -->
+                <div class="bg-slate-900 p-6 rounded-2xl shadow-xl transition duration-500 transform hover:-translate-y-1 border border-transparent hover:border-sky-400">
+                    <div class="flex flex-col items-center">
+                        <img src="../assets/sql.png" alt="MySQL Icon" class="h-14 w-14 mb-3 p-1 rounded-full bg-white/10 ring-2 ring-sky-400">
+                        <span class="text-xl font-extrabold text-sky-400 mb-2">MySQL</span>
+                        <p class="text-sm text-slate-400 text-center leading-tight">
+                            I know relational database design and write effective SQL queries for data management.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- PostgreSQL -->
+                <div class="bg-slate-900 p-6 rounded-2xl shadow-xl transition duration-500 transform hover:-translate-y-1 border border-transparent hover:border-sky-400">
+                    <div class="flex flex-col items-center">
+                        <img src="../assets/post.png" alt="PostgreSQL Icon" class="h-14 w-14 mb-3 p-1 rounded-full bg-white/10 ring-2 ring-sky-400">
+                        <span class="text-xl font-extrabold text-sky-400 mb-2">PostgreSQL</span>
+                        <p class="text-sm text-slate-400 text-center leading-tight">
+                            Experienced with advanced SQL features for building secure backends with strong data integrity.
+                        </p>
+                    </div>
                 </div>
             </div>
         </div>
     </div>
 
 
-
-
-
-    <!--certifications-->
-
-
-    <div id="certificates">
-        <section class="bg-[#B5B5B5] p-8 border-25 border-[#3A3A40] rounded animate-on-scroll" data-animation="animate__fadeInUp">
+    <!-- Certifications Section -->
+    <div id="certificates" class="px-4 sm:px-6 lg:px-8">
+        <section class="bg-slate-800 p-8 rounded-xl my-16 shadow-2xl animate-on-scroll" data-animation="animate__fadeInUp">
             <div class="text-center py-4 flex flex-col justify-center items-center gap-2">
-                <p class="text-3xl tracking-wider font-bold text-center">
+                <p class="text-3xl tracking-wider font-bold text-center text-white">
                     CERTIFICATES
                 </p>
-                <hr class="border-1 border-black w-16 text-center">
+                <hr class="border-1 border-sky-400 w-16 text-center">
             </div>
 
-            <div class="grid md:grid-cols-1 lg:grid-cols-2 xl:grid-cols-4 gap-6 my-6">
+            <div class="grid md:grid-cols-2 lg:grid-cols-4 xl:grid-cols-4 gap-6 my-6">
                 <!-- Certificate Card Template -->
-                <div class="bg-[#3A3A40] text-[#B5B5B5] p-6 rounded-xl shadow-xl transition duration-300 card-hover border border-slate-700 flex flex-col justify-between shadow-lg transition-transform duration-300 hover:scale-[1.01]">
-                    <div class="font-bold text-xl text-slate-100 mb-6 flex gap-2 items-center">
-                        <i class="bi bi-award-fill pb-6 text-yellow-300"></i> Machine Learning with Python
+                <div class="bg-slate-900 text-slate-100 p-6 rounded-xl shadow-xl transition duration-300 card-hover border border-slate-700 flex flex-col justify-between hover:scale-[1.01] transform hover:-translate-y-1 border border-transparent hover:border-sky-400">
+                    <div class="font-bold text-xl text-white mb-6 flex gap-2 items-center">
+                        <i class="bi bi-award-fill text-sky-400"></i> Machine Learning with Python
                     </div>
                     <p class="text-sm text-slate-400 mb-4">Issued by Great Learning</p>
                     <a href="./great learning.jpg" target="_blank">
@@ -409,37 +409,37 @@
                     </a>
                 </div>
 
-                <div class="bg-[#3A3A40] text-[#B5B5B5] p-6 rounded-xl shadow-xl transition duration-300 card-hover border border-slate-700 flex flex-col justify-between shadow-lg transition-transform duration-300 hover:scale-[1.01]">
-                    <div class="font-bold text-xl text-slate-100 mb-6 flex gap-2 items-center">
-                        <i class="bi bi-award-fill pb-6 text-yellow-300"></i> Introduction to Machine Learning
+                <div class="bg-slate-900 text-slate-100 p-6 rounded-xl shadow-xl transition duration-300 card-hover border border-slate-700 flex flex-col justify-between hover:scale-[1.01] transform hover:-translate-y-1 border border-transparent hover:border-sky-400">
+                    <div class="font-bold text-xl text-white mb-6 flex gap-2 items-center">
+                            <i class="bi bi-award-fill pb-6 text-sky-400"></i> Introduction to Machine Learning
                     </div>
                     <p class="text-sm text-slate-400 mb-4">Issued by NPTEL [MHRD]</p>
                     <a href="./nptel.jpg" target="_blank">
-                        <button class="cursor-pointer w-full bg-blue-600 text-white font-bold py-2 px-4 rounded hover:bg-blue-700 transition flex gap-2 items-center justify-center">
+                        <button class="cursor-pointer w-full bg-sky-600 text-white font-bold py-2 px-4 rounded hover:bg-sky-700 transition flex gap-2 items-center justify-center shadow-md">
                             <i class="bi bi-eye"></i> View Certificate
                         </button>
                     </a>
                 </div>
 
-                <div class="bg-[#3A3A40] text-[#B5B5B5] p-6 rounded-xl shadow-xl transition duration-300 card-hover border border-slate-700 flex flex-col justify-between shadow-lg transition-transform duration-300 hover:scale-[1.01]">
-                    <div class="font-bold text-xl text-slate-100 mb-6 flex gap-2 items-center">
-                        <i class="bi bi-award-fill pb-6 text-yellow-300"></i> Full Stack Development (MERN)
+                <div class="bg-slate-900 text-slate-100 p-6 rounded-xl shadow-xl transition duration-300 card-hover border border-slate-700 flex flex-col justify-between hover:scale-[1.01] transform hover:-translate-y-1 border border-transparent hover:border-sky-400">
+                    <div class="font-bold text-xl text-white mb-6 flex gap-2 items-center">
+                        <i class="bi bi-award-fill text-sky-400"></i> Full Stack Development (MERN)
                     </div>
                     <p class="text-sm text-slate-400 mb-4">Issued by LiveWire</p>
                     <a href="./mern.jpg" target="_blank">
-                        <button class="cursor-pointer w-full bg-blue-600 text-white font-bold py-2 px-4 rounded hover:bg-blue-700 transition flex gap-2 items-center justify-center">
+                        <button class="cursor-pointer w-full bg-sky-600 text-white font-bold py-2 px-4 rounded hover:bg-sky-700 transition flex gap-2 items-center justify-center shadow-md">
                             <i class="bi bi-eye"></i> View Certificate
                         </button>
                     </a>
                 </div>
 
-                <div class="bg-[#3A3A40] text-[#B5B5B5] p-6 rounded-xl shadow-xl transition duration-300 card-hover border border-slate-700 flex flex-col justify-between shadow-lg transition-transform duration-300 hover:scale-[1.01]">
-                    <div class="font-bold text-xl text-slate-100 mb-6 flex gap-2 items-center">
-                        <i class="bi bi-award-fill text-yellow-300"></i> Python for Data Science
+                <div class="bg-slate-900 text-slate-100 p-6 rounded-xl shadow-xl transition duration-300 card-hover border border-slate-700 flex flex-col justify-between hover:scale-[1.01] transform hover:-translate-y-1 border border-transparent hover:border-sky-400">
+                    <div class="font-bold text-xl text-white mb-6 flex gap-2 items-center">
+                        <i class="bi bi-award-fill text-sky-400"></i> Python for Data Science
                     </div>
                     <p class="xl:pt-4 text-sm text-slate-400 pb-4">Issued by Infosys</p>
                     <a href="./Infosys python for data science .jpg" target="_blank">
-                        <button class="cursor-pointer w-full bg-blue-600 text-white font-bold py-2 px-4 rounded hover:bg-blue-700 transition flex gap-2 items-center justify-center">
+                        <button class="cursor-pointer w-full bg-sky-600 text-white font-bold py-2 px-4 rounded hover:bg-sky-700 transition flex gap-2 items-center justify-center shadow-md">
                             <i class="bi bi-eye"></i> View Certificate
                         </button>
                     </a>
@@ -449,40 +449,38 @@
     </div>
 
 
-
-
-    <!--Workshops-->
-
-
-    <div id="workshops">
-        <section class="bg-[#B5B5B5] p-8 border-25 border-[#3A3A40] rounded animate-on-scroll" data-animation="animate__fadeInUp">
+    <!-- Workshops Section -->
+    <div id="workshops" class="px-4 sm:px-6 lg:px-8">
+        <section class="bg-slate-800 p-8 rounded-xl my-16 shadow-2xl animate-on-scroll" data-animation="animate__fadeInUp">
             <div class="text-center py-4 flex flex-col justify-center items-center gap-2">
-                <p class="text-3xl tracking-wider font-bold text-center">
+                <p class="text-3xl tracking-wider font-bold text-center text-white">
                     WORKSHOPS
                 </p>
-                <hr class="border-1 border-black w-16 text-center">
+                <hr class="border-1 border-sky-400 w-16 text-center">
             </div>
 
             <div class="grid md:grid-cols-1 xl:grid-cols-2 lg:grid-cols-2 gap-6 my-6">
-                <div class="bg-[#3A3A40] text-[#B5B5B5] p-6 rounded-xl shadow-xl transition duration-300 card-hover border border-slate-700 flex flex-col justify-between shadow-lg transition-transform duration-300 hover:scale-[1.01]">
-                    <div class="font-bold text-xl text-slate-100 mb-6 flex gap-2 items-center">
-                        <i class="bi bi-shield-check text-yellow-300"></i> Role of Rust in Blockchain Development
+                <!-- Workshop 1 -->
+                <div class="bg-slate-900 text-slate-100 p-6 rounded-xl shadow-xl transition duration-300 card-hover border border-slate-700 flex flex-col justify-between hover:scale-[1.01] transform hover:-translate-y-1 border border-transparent hover:border-sky-400">
+                    <div class="font-bold text-xl text-white mb-6 flex gap-2 items-center">
+                        <i class="bi bi-shield-check text-sky-400"></i> Role of Rust in Blockchain Development
                     </div>
                     <p class="text-sm text-slate-400 mb-4 pl-2">Conducted at SRM Institute of Science and Technology.</p>
                     <a href="./workshop.jpg" target="_blank" class="pl-2">
-                        <button class="cursor-pointer bg-blue-600 text-white font-bold py-2 px-8 rounded hover:bg-blue-700 transition flex gap-2 items-center justify-center">
+                        <button class="cursor-pointer bg-sky-600 text-white font-bold py-2 px-8 rounded hover:bg-sky-700 transition flex gap-2 items-center justify-center shadow-md">
                             <i class="bi bi-eye"></i> View Proof
                         </button>
                     </a>
                 </div>
 
-                <div class="bg-[#3A3A40] text-[#B5B5B5] p-6 rounded-xl shadow-xl transition duration-300 card-hover border border-slate-700 flex flex-col justify-between shadow-lg transition-transform duration-300 hover:scale-[1.01]">
-                    <div class="font-bold text-xl text-slate-100 mb-6 flex gap-2 items-center">
-                        <i class="bi bi-bar-chart text-yellow-300"></i> Data Science Workshop
+                <!-- Workshop 2 -->
+                <div class="bg-slate-900 text-slate-100 p-6 rounded-xl shadow-xl transition duration-300 card-hover border border-slate-700 flex flex-col justify-between hover:scale-[1.01] transform hover:-translate-y-1 border border-transparent hover:border-sky-400">
+                    <div class="font-bold text-xl text-white mb-6 flex gap-2 items-center">
+                        <i class="bi bi-bar-chart text-sky-400"></i> Data Science Workshop
                     </div>
                     <p class="text-sm text-slate-400 mb-4 pl-2">Conducted by Livewire.</p>
                     <a href="./data.jpg" target="_blank" class="pl-2">
-                        <button class="cursor-pointer bg-blue-600 text-white font-bold py-2 px-8 rounded hover:bg-blue-700 transition flex gap-2 items-center justify-center">
+                        <button class="cursor-pointer bg-sky-600 text-white font-bold py-2 px-8 rounded hover:bg-sky-700 transition flex gap-2 items-center justify-center shadow-md">
                             <i class="bi bi-eye"></i> View Proof
                         </button>
                     </a>
@@ -492,47 +490,41 @@
     </div>
 
 
-    <!--contact-->
-
-
-  
-    <div id="contact">
-        <section class="bg-[#B5B5B5] p-8 border-25 border-[#3A3A40] rounded animate-on-scroll" data-animation="animate__fadeInUp">
+    <!-- Contact Section -->
+    <div id="contact" class="px-4 sm:px-6 lg:px-8">
+        <section class="bg-slate-800 p-8 rounded-xl my-16 shadow-2xl animate-on-scroll" data-animation="animate__fadeInUp">
             <div class="text-center py-5 flex flex-col justify-center items-center gap-2">
-                <p class="text-3xl tracking-wider font-bold text-center"> CONTACT
-                </p> <hr class="border-1 border-black w-16 text-center">
+                <p class="text-3xl tracking-wider font-bold text-center text-white"> CONTACT
+                </p> <hr class="border-1 border-sky-400 w-16 text-center">
             </div>
             <div class="grid md:grid-cols-1 lg:grid-cols-1 xl:grid-cols-1 py-5">
-                <div class="rounded-full text-center bg-[#3A3A40] text-white p-4 my-2">
+                <!-- Contact Info Card -->
+                <div class="rounded-xl text-center bg-slate-900 text-white p-4 my-2 shadow-lg border border-slate-700">
                     <div class="grid md:grid-cols-1 lg:grid-cols-2 xl:grid-cols-2 items-center justify-center gap-4 p-4">
-                        <button>
-                            <a href="mailto:nishatharun57@gmail.com" class="hover:underline">
-                            <i class="bi bi-envelope text-violet-400"></i> nishatharun57@gmail.com
-                            </a>
-                        </button>
-                        <button>
-                            <a href="" class="hover:underline">
-                                <i class="bi bi-telephone text-end text-violet-400"></i> +91 7540092577
-                            </a>
-                        </button>
+                        <a href="mailto:nishatharun57@gmail.com" class="hover:underline text-slate-200 transition duration-200 hover:text-sky-400">
+                            <i class="bi bi-envelope text-sky-400 mr-2"></i> nishatharun57@gmail.com
+                        </a>
+                        <a href="tel:+917540092577" class="hover:underline text-slate-200 transition duration-200 hover:text-sky-400">
+                            <i class="bi bi-telephone mr-2 text-sky-400"></i> +91 7540092577
+                        </a>
                     </div>
                 </div>
-                <div class="text-center">
-                    <h3 class="text-2xl font-semibold text-black my-4">Find Me Online</h3>
+                <div class="text-center pt-8">
+                    <h3 class="text-2xl font-semibold text-white my-4">Find Me Online</h3>
 
                     <div class="flex justify-center space-x-8">
 
                         <!-- GitHub Link -->
                         <a href="https://github.com/N2KK5/" target="_blank"
                            aria-label="GitHub Profile"
-                           class="social-link p-4 text-4xl text-white transition transform duration-300 hover:scale-125 bg-[#3A3A40] hover:bg-gray-900 rounded-full flex items-center justify-center">
+                           class="social-link p-4 text-4xl text-sky-400 transition transform duration-300 hover:scale-110 bg-slate-900 hover:bg-sky-400 hover:text-white rounded-full flex items-center justify-center shadow-lg border border-sky-400">
                             <i class="bi bi-github"></i>
                         </a>
 
                         <!-- LinkedIn Link -->
                         <a href="https://www.linkedin.com/in/nisha-v-0a92892ba" target="_blank"
                            aria-label="LinkedIn Profile"
-                           class="social-link p-4 text-4xl text-white transition transform duration-300 hover:scale-125 bg-[#3A3A40] hover:bg-blue-600 rounded-full flex items-center justify-center">
+                           class="social-link p-4 text-4xl text-sky-400 transition transform duration-300 hover:scale-110 bg-slate-900 hover:bg-sky-400 hover:text-white rounded-full flex items-center justify-center shadow-lg border border-sky-400">
                             <i class="bi bi-linkedin"></i>
                         </a>
                     </div>
@@ -543,14 +535,14 @@
 
 
     <footer>
-        <section class="grid md:grid-cols-1 lg:grid-cols-1 xl:grid-cols-1 bg-[#3A3A40] text-white font-bold">
-            <div class="text-center tracking-widest py-2">
-                <p class="pb-4">Copyright <i class="bi bi-c-circle"></i> 2025 Nisha V. All Rights Reserved.</p>
+        <!-- Footer changed to a slightly deeper slate for better visual separation -->
+        <section class="grid md:grid-cols-1 lg:grid-cols-1 xl:grid-cols-1 bg-slate-950 text-slate-400 font-semibold">
+            <div class="text-center tracking-widest py-4">
+                <p>Copyright <i class="bi bi-c-circle"></i> 2025 Nisha V. All Rights Reserved.</p>
             </div>
         </section>
     </footer>
 </section>
-
 
 
 
@@ -574,12 +566,15 @@
         link.addEventListener('click', () => {
             if (!mobileMenu.classList.contains('hidden')) {
                 mobileMenu.classList.add('hidden');
-                menuIcons.forEach(icon => icon.classList.toggle('hidden'));
+                // Ensure the icons are reset to the hamburger state
+                menuIcons[0].classList.remove('hidden'); // Hamburger
+                menuIcons[1].classList.add('hidden');    // Close
             }
         });
     });
 
-     // --- New JavaScript for Scroll Reveal Animations (Intersection Observer) ---
+
+    // --- New JavaScript for Scroll Reveal Animations (Intersection Observer) ---
     const animateOnScroll = (entries, observer) => {
         entries.forEach(entry => {
             if (entry.isIntersecting) {
@@ -612,35 +607,5 @@
 </script>
 
 
-
 </body>
 </html>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
